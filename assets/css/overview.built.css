@@ -7683,7 +7683,7 @@ html.text-zoom .section-announced .announced-item .copy-container {
 
 @media only screen and (max-width: 1068px) {
     .section-announced .announced-item .copy-container .headline {
-        font-size: 40px;
+        font-size: 24px;
         line-height: 1.1;
         font-weight: 600;
         letter-spacing: 0em;
