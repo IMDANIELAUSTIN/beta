@@ -6514,8 +6514,7 @@ html.no-js picture[data-lazy] {
     height: 592px;
     background-size: 592px 592px;
     background-repeat: no-repeat;
-    background-image: url(/v/apple-events/home/ab/images/overview/hero/hero_announce__bwxm3afyufua_large.jpg);
-    display:none
+    background-image:url(/images/iphone_15_pro__car0b2hfk6c2_large.jpg)
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi), only screen and(-webkit-min-device-pixel-ratio: 1.5), only screen and(min-resolution: 1.5dppx) {
@@ -6530,13 +6529,13 @@ html.no-js picture[data-lazy] {
         height: 296px;
         background-size: 296px 296px;
         background-repeat: no-repeat;
-        background-image:url(/v/apple-events/home/ab/images/overview/hero/hero_announce__bwxm3afyufua_small.jpg)
+    background-image:url(/images/iphone_15_pro__car0b2hfk6c2_large.jpg)
     }
 }
 
 @media only screen and (max-width: 734px) and(-webkit-min-device-pixel-ratio: 1.5), only screen and(max-width: 734px) and(min-resolution: 1.5dppx), only screen and(max-width: 734px) and(min-resolution: 144dpi) {
     .section-hero .hero-animation .end-frame {
-        background-image:url(/v/apple-events/home/ab/images/overview/hero/hero_announce__bwxm3afyufua_small_2x.jpg)
+    background-image:url(/images/iphone_15_pro__car0b2hfk6c2_large.jpg)
     }
 }
 
@@ -8516,8 +8515,7 @@ html.arql.iphone .section-hero .ar-link {
 
 .section-recent-events .recent-events-gallery .item-container .gallery-item .jun-2023-event-image {
     background-repeat: no-repeat;
-    background-image: url(/images/jun-2023__cjqmmqlyd21y_large.jpg);
-    background-size:cover
+    background-image:url(/images/iphone_15_pro__car0b2hfk6c2_large.jpg)
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi), only screen and(-webkit-min-device-pixel-ratio: 1.5), only screen and(min-resolution: 1.5dppx) {
@@ -8535,8 +8533,7 @@ html.arql.iphone .section-hero .ar-link {
 @media only screen and (max-width: 734px) {
     .section-recent-events .recent-events-gallery .item-container .gallery-item .jun-2023-event-image {
         background-repeat: no-repeat;
-        background-image: url(/images/jun-2023__cjqmmqlyd21y_small.jpg);
-        background-size:cover
+    background-image:url(/images/iphone_15_pro__car0b2hfk6c2_large.jpg)
     }
 }
 
@@ -8556,8 +8553,7 @@ html.arql.iphone .section-hero .ar-link {
 
 .section-recent-events .recent-events-gallery .item-container .gallery-item .sep-2022-event-image {
     background-repeat: no-repeat;
-    background-image: url(/images/sep-2022__cssrr2kb1b6u_large.jpg);
-    background-size:cover
+    background-image:url(/images/iphone_15_pro__car0b2hfk6c2_large.jpg)
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi), only screen and(-webkit-min-device-pixel-ratio: 1.5), only screen and(min-resolution: 1.5dppx) {
@@ -8596,8 +8592,7 @@ html.arql.iphone .section-hero .ar-link {
 
 .section-recent-events .recent-events-gallery .item-container .gallery-item .jun-2022-event-image {
     background-repeat: no-repeat;
-    background-image: url(/images/jun-2022__tke3p0b4qz2q_large.jpg);
-    background-size:cover
+    background-image:url(/images/iphone_15_pro__car0b2hfk6c2_large.jpg)
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi), only screen and(-webkit-min-device-pixel-ratio: 1.5), only screen and(min-resolution: 1.5dppx) {
@@ -8636,8 +8631,7 @@ html.arql.iphone .section-hero .ar-link {
 
 .section-recent-events .recent-events-gallery .item-container .gallery-item .mar-2022-event-image {
     background-repeat: no-repeat;
-    background-image: url(/images/mar-2022__dhb9rk86zhyu_large.jpg);
-    background-size:cover
+    background-image:url(/images/iphone_15_pro__car0b2hfk6c2_large.jpg)
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi), only screen and(-webkit-min-device-pixel-ratio: 1.5), only screen and(min-resolution: 1.5dppx) {
@@ -8676,8 +8670,7 @@ html.arql.iphone .section-hero .ar-link {
 
 .section-recent-events .recent-events-gallery .item-container .gallery-item .oct-2021-event-image {
     background-repeat: no-repeat;
-    background-image: url(/images/oct-2021__ei1qv4959muu_large.jpg);
-    background-size:cover
+    background-image:url(/images/iphone_15_pro__car0b2hfk6c2_large.jpg)
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi), only screen and(-webkit-min-device-pixel-ratio: 1.5), only screen and(min-resolution: 1.5dppx) {
@@ -8716,8 +8709,7 @@ html.arql.iphone .section-hero .ar-link {
 
 .section-recent-events .recent-events-gallery .item-container .gallery-item .sep-2021-event-image {
     background-repeat: no-repeat;
-        background-image:url(/images/oct-2021__ei1qv4959muu_large_2x.jpg)
-    background-size:cover
+    background-image:url(/images/iphone_15_pro__car0b2hfk6c2_large.jpg)
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi), only screen and(-webkit-min-device-pixel-ratio: 1.5), only screen and(min-resolution: 1.5dppx) {
