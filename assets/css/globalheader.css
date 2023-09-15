@@ -702,6 +702,22 @@ html, body {
         transition-delay:0s
     }
 }
+.symbol, logo {
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--r-globalnav-color);
+    position: relative;
+    z-index: 1;
+    padding: 0 calc(8px / var(--r-globalnav-text-zoom-scale, 1));
+    height: 44px;
+    background: no-repeat;
+    text-decoration: none;
+    white-space: nowrap;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    transition:color .32s cubic-bezier(.4, 0, .6, 1)
+}
 
 #globalnav .globalnav-link {
     font-size: 12px;
