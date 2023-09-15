@@ -256,8 +256,9 @@ li li {
 }
 
 .link, a {
-    color: #06c;
-    letter-spacing:inherit
+    color: #ff0000;
+    letter-spacing: inherit;
+
 }
 
 .link:link, .link:visited, a:link, a:visited {
@@ -4217,7 +4218,8 @@ a.block .block-link {
 }
 
 .theme-dark .link, .theme-dark a {
-    color:#2997ff
+    color: #ff0000;
+
 }
 
 .theme-dark .footnote a {
@@ -5562,7 +5564,8 @@ main {
     line-height: 1.381002381;
     font-weight: 400;
     letter-spacing: .011em;
-    font-family:SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+
 }
 
 .typography-intro:lang(ja) {
