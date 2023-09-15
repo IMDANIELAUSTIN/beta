@@ -8199,7 +8199,7 @@ html.text-zoom .section-announced .announced-item .copy-container {
 
 @media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi), only screen and(-webkit-min-device-pixel-ratio: 1.5), only screen and(min-resolution: 1.5dppx) {
     .september-2023 .section-announced .announced-item-carbon-neutral .bg-image {
-        background-image:url(/images//carbon_neutral__b7bm0pzcveqa_large_2x.jpg)
+        background-image:url(/images/carbon_neutral__b7bm0pzcveqa_large_2x.jpg)
     }
 }
 
@@ -8225,13 +8225,13 @@ html.text-zoom .section-announced .announced-item .copy-container {
         height: 243px;
         background-size: 335px 243px;
         background-repeat: no-repeat;
-        background-image:url(/v/apple-events/home/ab/images/overview/products/carbon_neutral__b7bm0pzcveqa_small.jpg)
+        background-image:url(/images/carbon_neutral__b7bm0pzcveqa_small.jpg)
     }
 }
 
 @media only screen and (max-width: 734px) and(-webkit-min-device-pixel-ratio: 1.5), only screen and(max-width: 734px) and(min-resolution: 1.5dppx), only screen and(max-width: 734px) and(min-resolution: 144dpi) {
     .september-2023 .section-announced .announced-item-carbon-neutral .bg-image {
-        background-image:url(/v/apple-events/home/ab/images/overview/products/carbon_neutral__b7bm0pzcveqa_small_2x.jpg)
+        background-image:url(/images/carbon_neutral__b7bm0pzcveqa_small_2x.jpg)
     }
 }
 
