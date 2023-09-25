@@ -206,6 +206,33 @@ body, button, input, select, textarea {
     direction: ltr;
     text-align:left
 }
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.wrap
+{
+    margin: 16px auto;
+    width: 800;
+    padding: 72px auto;
+    display:flex;
+    align-items: stretch;
+    min-width: 300px;
+    align-content: center;
+    align-items: center ;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
