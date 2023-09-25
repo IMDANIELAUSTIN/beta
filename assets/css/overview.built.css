@@ -8773,8 +8773,9 @@ html.text-zoom .section-recent-events .recent-events-gallery .item-container .ga
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: auto 0 31px;
-    min-height:40px
+    margin: auto 0 auto;
+    min-height: auto;
+
 }
 
 html.text-zoom .section-recent-events .recent-events-gallery .item-container .gallery-item .cta-container {
