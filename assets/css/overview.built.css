@@ -6509,17 +6509,9 @@ html.no-js picture[data-lazy] {
     }
 }
 
-.section-hero .hero-animation .end-frame {
-    width: 592px;
-    height: 592px;
-    background-size: 592px 592px;
-    background-repeat: no-repeat;
-    background-image: url(/images/hero_startframe__bajz62vgcj42_large.jpg);
-}
 
 @media (-webkit-min-device-pixel-ratio: 1.5),(min-resolution: 144dpi), only screen and(-webkit-min-device-pixel-ratio: 1.5), only screen and(min-resolution: 1.5dppx) {
     .section-hero .hero-animation .end-frame {
-    background-image: url(/images/Swatch Timelapse.MP4);
     }
 }
 
@@ -6529,7 +6521,6 @@ html.no-js picture[data-lazy] {
         height: 296px;
         background-size: 296px 296px;
         background-repeat: no-repeat;
-    background-image: url(/images/hero_startframe__bajz62vgcj42_large.jpg);
     }
 }
 
@@ -6554,7 +6545,8 @@ html.no-js picture[data-lazy] {
 @media only screen and (max-width: 734px) {
     .section-hero .hero-animation .ar-link, .section-hero .hero-animation .end-frame.end, .section-hero .hero-animation .start-frame.start {
         width: 296px;
-        height:296px
+        /* height: 296px; */
+    
     }
 }
 
@@ -6814,7 +6806,8 @@ html.no-js .section-hero .inline-media-ui, html.reduced-motion .section-hero .in
     font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
     text-align: center;
     z-index: 1;
-    margin-top:-45px
+ */
+
 }
 
 .section-hero .copy-container:lang(ja) {
