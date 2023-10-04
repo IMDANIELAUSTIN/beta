@@ -682,7 +682,6 @@ h1 #ac-localnav sup, h2 #ac-localnav sup, h3 #ac-localnav sup {
 .ac-nav-overlap #ac-localnav {
     margin-top: 44px;
     margin-bottom:auto;
-
 }
 
 .ac-nav-overlap #ac-localnav.ac-localnav-stacked {
@@ -1054,6 +1053,7 @@ h1 #ac-localnav sup, h2 #ac-localnav sup, h3 #ac-localnav sup {
     z-index: 1;
     transition: background 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
     background:var(--localnav-background)
+
 }
 
 #ac-localnav .ac-ln-background:after {
@@ -1122,11 +1122,12 @@ h1 #ac-localnav sup, h2 #ac-localnav sup, h3 #ac-localnav sup {
 }
 
 #ac-localnav.ac-ln-sticking .ac-ln-background {
-    background: var(--localnav-background-stuck, rgba(251, 251, 253, 0.92));
+    /* background: var(--localnav-background-stuck, rgba(251, 251, 253, 0.92)); */
     transition: background 0.5s cubic-bezier(0.28, 0.11, 0.32, 1);
     transition-property: background, -webkit-backdrop-filter;
     transition-property: background, backdrop-filter;
-    transition-property:background, backdrop-filter, -webkit-backdrop-filter
+    transition-property: background, backdrop-filter, -webkit-backdrop-filter;
+
 }
 
 @supports ((-webkit-backdrop-filter: initial) or(backdrop-filter: initial)) {
@@ -2563,7 +2564,7 @@ h1 #ac-localnav sup, h2 #ac-localnav sup, h3 #ac-localnav sup {
 }
 
 #ac-localnav .ac-ln-title, #ac-localnav .ac-ln-title a {
-    color: #000;
+    color: #ffffff;
     transition:color 0.5s cubic-bezier(0.28, 0.11, 0.32, 1)
 }
 
