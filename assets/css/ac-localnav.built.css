@@ -681,7 +681,8 @@ h1 #ac-localnav sup, h2 #ac-localnav sup, h3 #ac-localnav sup {
 
 .ac-nav-overlap #ac-localnav {
     margin-top: 44px;
-    margin-bottom:-96px
+    margin-bottom:auto;
+
 }
 
 .ac-nav-overlap #ac-localnav.ac-localnav-stacked {
