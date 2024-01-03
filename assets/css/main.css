@@ -13,11 +13,6 @@
     position: block;
     margin: 2px auto;
     }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   background: #f2f2f2;
@@ -1175,6 +1170,15 @@ div .copyright{
 
 
 @media (max-width: 480px) {
+.wrap
+{
+    margin: 16px auto;
+    width: auto;
+    display:grid;
+    align-items: stretch;
+    max-width: 320px;
+
+}
 .logo {
     position: block;
     margin: 2px auto;
@@ -1185,7 +1189,7 @@ div .copyright{
   box-sizing: border-box;
 }
 
-body {
+.body {
   background: #f2f2f2;
 }
 
@@ -1573,6 +1577,16 @@ div .copyright{
 }
   
 @media (max-width: 320px) {
+.wrap
+{
+    margin: 16px auto;
+    width: auto;
+    display:grid;
+    align-items: stretch;
+    max-width: 320px;
+
+}
+
 .logo {
     position: block;
     margin: 2px auto;
@@ -1583,7 +1597,7 @@ div .copyright{
   box-sizing: border-box;
 }
 
-body {
+.body {
   background: #f2f2f2;
 }
 
@@ -1794,16 +1808,6 @@ body
 
 html {
   scroll-behavior: smooth;
-}
-
-.wrap
-{
-    margin: 16px auto;
-    width: auto;
-    display:grid;
-    align-items: stretch;
-    max-width: 320px;
-
 }
 
 .tile
