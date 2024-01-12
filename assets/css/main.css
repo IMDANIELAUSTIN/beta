@@ -13,11 +13,6 @@
     position: block;
     margin: 2px auto;
     }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   background: #f2f2f2;
@@ -187,7 +182,15 @@ myBtn {
   width: 100%;
   height: 100%;
 }
+.wrap
+{
+    margin: 16px auto;
+    width: auto;
+    display:grid;
+    align-items: stretch;
+    max-width: 1200px;
 
+}
 header {
   width: 90%;
   max-width: 1240px;
@@ -232,15 +235,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.wrap
-{
-    margin: 16px auto;
-    width: auto;
-    display:grid;
-    align-items: stretch;
-    max-width: 1200px;
-
-}
 .tile
 {
     width: 640;
