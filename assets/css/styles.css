@@ -183,3 +183,41 @@ nav {
         transform: rotate(-45deg) translate(5px, -5px);
     }
 }
+@media (max-width: 480px) {
+.show {
+        background-color: transparent;
+    }
+
+.bar {
+    height: 4pt;
+    width: 16pt;
+    background: #ffffff;
+    transition: 0.5s;
+}
+
+.show .one {
+    transform: rotate(45deg) translateY(5pt);
+}
+
+.show .two {
+    transform: rotate(-45deg) translateY(-5pt);
+}
+@media (max-width: 320px) {
+.show {
+        background-color: transparent;
+    }
+
+.bar {
+    height: 4pt;
+    width: 16pt;
+    background: #ffffff;
+    transition: 0.5s;
+}
+
+.show .one {
+    transform: rotate(45deg) translateY(5pt);
+}
+
+.show .two {
+    transform: rotate(-45deg) translateY(-5pt);
+}
