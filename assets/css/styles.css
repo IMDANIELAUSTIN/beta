@@ -12,6 +12,33 @@ body {
     align-items: center;
     height: 100vh;
 }
+.main-container {
+    display: flex;
+    gap: 20px;
+}
+
+.large-tile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.large-tile-container img {
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.small-tile-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
 
 .container {
     display: grid;
