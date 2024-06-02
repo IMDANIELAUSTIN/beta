@@ -8,13 +8,82 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     height: 100vh;
+    margin: 0;
 }
+
+nav {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: auto;
+}
+
+.logo img {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.nav-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #aaa;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    padding-top: 70px; /* Height of the navbar + some padding */
+}
+
 .main-container {
     display: flex;
     gap: 20px;
+    padding: 20px;
+    max-width: 1080px;
+    width: 100%;
 }
 
 .large-tile-container {
@@ -26,7 +95,7 @@ body {
     padding: 20px;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .large-tile-container img {
@@ -38,6 +107,24 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+}
+
+.tile-item {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tile-item img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+.tile-item p {
+    font-weight: bold;
+    font-size: 1.1em;
 }
 
 .container {
@@ -52,7 +139,7 @@ body {
     padding: 20px;
     text-align: center;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo-item img {
@@ -65,20 +152,34 @@ body {
     font-size: 1.1em;
 }
 
-.tile-item {
-    background-color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.tile-item img {
-    max-width: 100%;
-    margin-bottom: 10px;
-}
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+        display: none; /* Hidden by default for mobile */
+    }
 
-.tile-item p {
-    font-weight: bold;
-    font-size: 1.1em;
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .nav-icon {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-icon.active .bar.one {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .nav-icon.active .bar.two {
+        transform: rotate(-45deg) translate(5px, -5px);
+    }
 }
