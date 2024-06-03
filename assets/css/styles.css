@@ -147,9 +147,8 @@ nav {
     font-size: 1.1em;
 }
 footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #ffffff;
+    color: #1e1e1e;
 }
 
 .footer-top {
@@ -189,7 +188,7 @@ footer {
 }
 
 .social-icons a {
-    color: #000;
+    color: #ffffff;
     margin: 0 5px;
     font-size: 20px;
 }
@@ -210,7 +209,7 @@ footer {
 }
 
 .footer-column a {
-    color: #fff;
+    color: #1e1e1e;
     text-decoration: none;
     display: block;
     margin-bottom: 5px;
@@ -312,9 +311,8 @@ footer {
     font-size: 1.1em;
 }
 footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #ffffff;
+    color: #1e1e1e;
 }
 
 .footer-top {
@@ -354,7 +352,7 @@ footer {
 }
 
 .social-icons a {
-    color: #000;
+    color: #ffffff;
     margin: 0 5px;
     font-size: 20px;
 }
@@ -375,7 +373,7 @@ footer {
 }
 
 .footer-column a {
-    color: #fff;
+    color: #1e1e1e;
     text-decoration: none;
     display: block;
     margin-bottom: 5px;
@@ -457,10 +455,9 @@ nav {
 .show .two {
     transform: rotate(-45deg) translateY(-5pt);
 }
-    footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
+footer {
+    background-color: #ffffff;
+    color: #1e1e1e;
 }
 
 .footer-top {
@@ -500,7 +497,7 @@ nav {
 }
 
 .social-icons a {
-    color: #000;
+    color: #ffffff;
     margin: 0 5px;
     font-size: 20px;
 }
@@ -521,7 +518,7 @@ nav {
 }
 
 .footer-column a {
-    color: #fff;
+    color: #1e1e1e;
     text-decoration: none;
     display: block;
     margin-bottom: 5px;
@@ -530,6 +527,7 @@ nav {
 .footer-column a:hover {
     text-decoration: underline;
 }
+    
 @media (max-width: 320px) {
 .show {
         background-color: transparent;
@@ -603,10 +601,10 @@ nav {
 .show .two {
     transform: rotate(-45deg) translateY(-5pt);
 }
-    footer {
-    background-color: #000;
-    color: #fff;
-    padding: 20px 0;
+
+footer {
+    background-color: #ffffff;
+    color: #1e1e1e;
 }
 
 .footer-top {
@@ -646,7 +644,7 @@ nav {
 }
 
 .social-icons a {
-    color: #000;
+    color: #ffffff;
     margin: 0 5px;
     font-size: 20px;
 }
@@ -667,7 +665,7 @@ nav {
 }
 
 .footer-column a {
-    color: #fff;
+    color: #1e1e1e;
     text-decoration: none;
     display: block;
     margin-bottom: 5px;
