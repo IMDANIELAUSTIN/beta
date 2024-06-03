@@ -48,8 +48,9 @@ nav {
 .nav-icon .bar {
     width: 25px;
     height: 3px;
-    background-color: #ffffff;
+    background-color: #1e1e1e;
     margin: 4px 0;
+
 }
 
 .nav-links {
@@ -118,7 +119,6 @@ nav {
 }
 
 .tile-item p {
-    font-weight: bold;
     font-size: 1.1em;
 }
 
@@ -188,7 +188,7 @@ footer {
 }
 
 .social-icons a {
-    color: #ffffff;
+    color: #1e1e1e;
     margin: 0 5px;
     font-size: 20px;
 }
@@ -204,7 +204,6 @@ footer {
 }
 
 .footer-title {
-    font-weight: bold;
     margin-bottom: 10px;
 }
 
@@ -283,7 +282,6 @@ footer {
 }
 
 .tile-item p {
-    font-weight: bold;
     font-size: 1.1em;
 }
 
@@ -352,7 +350,7 @@ footer {
 }
 
 .social-icons a {
-    color: #ffffff;
+    color: #1e1e1e;
     margin: 0 5px;
     font-size: 20px;
 }
@@ -368,7 +366,6 @@ footer {
 }
 
 .footer-title {
-    font-weight: bold;
     margin-bottom: 10px;
 }
 
@@ -382,6 +379,7 @@ footer {
 .footer-column a:hover {
     text-decoration: underline;
 }
+    
 @media (max-width: 480px) {
 .show {
         background-color: transparent;
@@ -431,7 +429,7 @@ nav {
 }
 
 .nav-links a {
-    color: #fff;
+    color: #1e1e1e;
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
@@ -513,7 +511,6 @@ footer {
 }
 
 .footer-title {
-    font-weight: bold;
     margin-bottom: 10px;
 }
 
@@ -644,7 +641,7 @@ footer {
 }
 
 .social-icons a {
-    color: #ffffff;
+    color: #1e1e1e;
     margin: 0 5px;
     font-size: 20px;
 }
@@ -660,7 +657,6 @@ footer {
 }
 
 .footer-title {
-    font-weight: bold;
     margin-bottom: 10px;
 }
 
