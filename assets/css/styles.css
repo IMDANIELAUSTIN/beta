@@ -14,7 +14,7 @@ body {
 
 nav {
     width: 100%;
-    background-color: #1e1e1e;
+    background-color: #ffffff;
     padding: 10px 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
@@ -48,7 +48,7 @@ nav {
 .nav-icon .bar {
     width: 25px;
     height: 3px;
-    background-color: #fff;
+    background-color: #ffffff;
     margin: 4px 0;
 }
 
@@ -58,14 +58,14 @@ nav {
 }
 
 .nav-links a {
-    color: #fff;
+    color: #1e1e1e;
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #aaa;
+    color: #1e1e1e;
 }
 
 .wrapper {
