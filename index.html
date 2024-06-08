@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>DANIEL AUSTIN</title>
@@ -11,19 +11,9 @@
     <meta property="og:image" content="/Website Assets/iMessagePreview1.png">
     <link rel="stylesheet" href="assets/css/styles.css">
     <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
-    
-    <!-- Google tag (gtag.js) -->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-765NYJTFKW"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-765NYJTFKW');
-    </script>
-    <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6034176704251723" crossorigin="anonymous" data-checked-head="true"></script>
-<meta http-equiv="origin-trial" content="AlK2UR5SkAlj8jjdEc9p3F3xuFYlF6LYjAML3EOqw1g26eCwWPjdmecULvBH5MVPoqKYrOfPhYVL71xAXI1IBQoAAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="Amm8/NmvvQfhwCib6I7ZsmUxiSCfOxWxHayJwyU1r3gRIItzr7bNQid6O8ZYaE1GSQTa69WwhPC9flq/oYkRBwsAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3NTgwNjcxOTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A/ERL66fN363FkXxgDc6F1+ucRUkAhjEca9W3la6xaLnD2Y1lABsqmdaJmPNaUKPKVBRpyMKEhXYl7rSvrQw+AkAAACNeyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="><meta http-equiv="origin-trial" content="A6OdGH3fVf4eKRDbXb4thXA4InNqDJDRhZ8U533U/roYjp4Yau0T3YSuc63vmAs/8ga1cD0E3A7LEq6AXk1uXgsAAACTeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiRmxlZGdlQmlkZGluZ0FuZEF1Y3Rpb25TZXJ2ZXIiLCJleHBpcnkiOjE3MTkzNTk5OTksImlzU3ViZG9tYWluIjp0cnVlfQ=="></head>
-    <body>
-        <header>
+</head>
+<body>
+    <header>
         <div>
             <a href="https://imdanielaustin.com" class="logo">
                 <span class="symbol">
@@ -31,11 +21,11 @@
                 </span>
             </a>
         </div>
-<nav>
-    <a href="mailto: me@imdanielaustin.com"><button>EMAIL ME</button></a>
-    <a href="https://imdanielaustin.com/About"><button>RÉSUMÉ</button></a>
-    <a href="https://blog.imdanielaustin.com"><button>WRITINGS</button></a>
-</nav>
+        <nav>
+            <button id="copyEmailBtn">EMAIL ME</button>
+            <a href="https://imdanielaustin.com/About"><button>RÉSUMÉ</button></a>
+            <a href="https://blog.imdanielaustin.com"><button>WRITINGS</button></a>
+        </nav>
     </header>
     <main>
         <section class="tiles">
@@ -65,10 +55,13 @@
             </div>
         </section>
     </main>
-    <button id="myBtn" title="Back to Top">Back to Top</button>
+    <button id="myBtn" title="Back to Top" style="display: none;">Back to Top</button>
     <footer>
         Footer
     </footer>
+
+    <!-- Hidden input to hold the email address -->
+    <input type="text" value="me@imdanielaustin.com" id="emailAddress" style="position: absolute; left: -9999px;">
 
     <script>
         // Back to Top button
@@ -88,6 +81,17 @@
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         };
+
+        // Copy email to clipboard
+        document.getElementById('copyEmailBtn').addEventListener('click', function() {
+            var copyText = document.getElementById("emailAddress");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+            document.execCommand("copy");
+
+            // Alert the copied text (optional)
+            alert("Copied the email: " + copyText.value);
+        });
     </script>
 
 </body>
