@@ -42,25 +42,25 @@ main {
     justify-content: center;
 }
 
-.tile-1 {
-    flex: 1;
-    height: 100%;
+.tile img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
 }
 
-.paragraph {
+.tile-1 {
     flex: 1;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    margin: 5px;
+    max-width: 100%;
+    height: auto;
 }
 
 .tiles {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-gap: 10px;
-    flex: 2;
+    grid-gap: 0px;
+    flex: 1;
     padding: 10px;
 }
 
@@ -70,12 +70,94 @@ footer {
     text-align: center;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
     main {
-        flex-direction: row;
+        flex-direction: column;
+    }
+
+.tile {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tile img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.tile-1 {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 0px;
+    flex: 1;
+    padding: 10px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+@media (max-width: 678px) {
+    main {
+        flex-direction: column;
+    }
+
+.tile {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tile img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.tile-1 {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-gap: 0px;
+    flex: 1;
+    padding: 10px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+@media (max-width: 320px) {
+    main {
+        flex-direction: column;
     }
 
     .tiles {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(1, 1fr);
     }
 }
