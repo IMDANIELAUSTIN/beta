@@ -13,28 +13,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background-color: #f0f0f0;
+    padding: 16px;
+    background-color: inherit;
+
 }
 
 .logo {
-    padding: 8px;
     background-color: inherit;
 }
 
 nav button {
-    margin: 0 5px;
-    padding: 10px 20px;
+    padding: 16px;
 }
 
 main {
     display: flex;
     flex-grow: 1;
-    padding: 10px;
+    padding: 16px;
 }
 
 .tile {
-    background-color: #f0f0f0;
+    background-color: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +62,7 @@ main {
 }
 
 footer {
-    background-color: #f0f0f0;
+    background-color: inherit;
     padding: 10px;
     text-align: center;
 }
@@ -74,7 +73,7 @@ footer {
     }
 
 .tile {
-    background-color: #f0f0f0;
+    background-color: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,8 +100,8 @@ footer {
 }
 
 footer {
-    background-color: #f0f0f0;
-    padding: 10px;
+    background-color: inherit;
+    padding: 16px;
     text-align: center;
 }
 @media (max-width: 678px) {
@@ -111,7 +110,7 @@ footer {
     }
 
 .tile {
-    background-color: #f0f0f0;
+    background-color: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -138,8 +137,8 @@ footer {
 }
 
 footer {
-    background-color: #f0f0f0;
-    padding: 10px;
+    background-color: inherit;
+    padding: 16px;
     text-align: center;
 }
 @media (max-width: 320px) {
@@ -150,7 +149,7 @@ main {
 }
 
 .tile {
-    background-color: #f0f0f0;
+    background-color: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,7 +178,7 @@ main {
 }
 
 footer {
-    background-color: #f0f0f0;
-    padding: 10px;
+    background-color: inherit;
+    padding: 8px;
     text-align: center;
 }
