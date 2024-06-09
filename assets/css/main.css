@@ -30,7 +30,7 @@ nav button {
     font-size: 8pt;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     height: 22pt;
-    min-width: 70pt;
+    max-width: 140pt;
 }
 
 nav button:hover {
@@ -48,6 +48,7 @@ nav button:hover {
     height: 22pt;
     max-width: 140pt;
 }
+
 nav button:active {
     text-decoration-color: #1e1e1e;
     background-color: #333;
@@ -57,7 +58,7 @@ nav button:active {
     font-size: 8pt;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     height: 22pt;
-    min-width: 70pt;
+    max-width: 140pt;
 }
 
 button {
