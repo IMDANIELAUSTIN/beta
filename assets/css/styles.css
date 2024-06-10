@@ -195,6 +195,8 @@ main {
   max-width: 90%;
   background: #fff;
   padding: 1em 2em;
+  overflow-y: auto;
+
 }
 
 .modal__footer {
@@ -220,7 +222,7 @@ body {
 .gallery {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
     overflow-y: auto;
 }
 

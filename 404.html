@@ -164,41 +164,36 @@
 
     <script type="text/javascript" src="/assets/js/ac-globalfooter.built.js"></script>
 
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@id": "https://www.apple.com/#organization",
-    "@type": "Organization",
-    "name": "Apple",
-    "url": "https://www.apple.com/",
-    "logo": "https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png?202309071824",
-    "subOrganization": {
-      "@type": "Organization",
-      "name": "Apple Support",
-      "url": "https://support.apple.com",
-      "@id": "https://support.apple.com/#organization"
-    },
-    "contactPoint": [
-      {
-        "@type": "ContactPoint",
-        "telephone": "+1-626-813-2213",
-        "contactType": "Business",
-        "areaServed": "US"
-      },
-    ],
-    "sameAs": [
-      "https://www.youtube.com/user/IMDANIELAUSTIN",
-      "https://www.linkedin.com/company/IMDANIELAUSTIN",
-      "https://www.twitter.com/IMDANIELAUSTIN"
-    ]
-  }
-</script>
+<script src="scripts.js">
+        // Back to Top button
+        var backToTopButton = document.getElementById("myBtn");
 
-<script type="text/javascript" src="/ac/localeswitcher/4/en_US/scripts/localeswitcher.built.js"></script>
+        // Show the button when scrolling down 20px
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        };
 
+        // Scroll to the top when the button is clicked
+        backToTopButton.onclick = function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        };
 
+        // Copy email to clipboard
+        document.getElementById('copyEmailBtn').addEventListener('click', function() {
+            var copyText = document.getElementById("emailAddress");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+            document.execCommand("copy");
 
-    </div>
-  </footer>
-  <link rel="stylesheet" href="/assets/css/ac-video.css">
-  <script src="/assets/js/ac-video.built.js" type="text/javascript"></script>
+            // Alert the copied text (optional)
+            alert("Copied the email: " + copyText.value);
+        });
+    </script>
+
+</body>
+</html>
