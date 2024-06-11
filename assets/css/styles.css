@@ -142,13 +142,11 @@ main {
 }
 
 .tile h1 , h2 , pre  {
-    position: absolute ;
     margin: 0px;
     padding: 0px;
     top: 104px;
     left: 24px;
     font-size: 16px;
-    align-content: left ;
 }
 
 .tiles {
