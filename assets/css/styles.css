@@ -134,22 +134,31 @@ main {
     aspect-ratio: 1/1;
     object-fit: contain;
 }
+.tile .text {
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    font-size: 16px;
+}
 
 .tiles-1 {
     flex: 1;
     max-width: 100%;
     height: auto;
 }
+.tiles-1 .text {
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    font-size: 16px;
+}
 
 .tiles {
-
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     flex: 1;
     gap: 16px;
-
-
 }
 
 .tiles img {
@@ -157,6 +166,14 @@ main {
     height: auto;
     aspect-ratio: 1/1;
     object-fit: contain;
+}
+.tiles .text {
+    position: absolute;
+    top: 104px;
+    left: auto;
+    font-size: 16px;
+    align-items: left;
+    inline-size: 'start';
 }
 
 .wrapper {
@@ -375,10 +392,24 @@ footer {
     object-fit: contain;
 }
 
+.tile .text {
+    position: absolute ;
+    top: 16px;
+    left: 0px;
+    font-size: 16px;
+}
+
 .tiles-1 {
     flex: 1;
     max-width: 100%;
     height: auto;
+}
+
+.tiles-1 .text {
+    position: absolute ;
+    top: 16px;
+    left: 0px;
+    font-size: 16px;
 }
 
 .tiles {
@@ -397,6 +428,15 @@ footer {
     height: auto;
     aspect-ratio: 1/1;
     object-fit: contain;
+}
+
+.tiles .text {
+    position: absolute;
+    top: 104px;
+    left: auto;
+    font-size: 16px;
+    align-items: left;
+    inline-size: 'start';
 }
 
 footer {
@@ -428,6 +468,12 @@ footer {
     aspect-ratio: 1/1;
     object-fit: contain;
 }
+.tile .text {
+    position: absolute ;
+    top: 16px;
+    left: 0px;
+    font-size: 16px;
+}
 
 .tiles-1 {
     flex: 1;
@@ -435,6 +481,14 @@ footer {
     height: auto;
 }
 
+.tiles-1 .text {
+    position: absolute;
+    top: 104px;
+    left: auto;
+    font-size: 16px;
+    align-items: left;
+    inline-size: 'start';
+}
 .tiles {
 
     display: grid;
@@ -451,6 +505,14 @@ footer {
     height: auto;
     aspect-ratio: 1/1;
     object-fit: contain;
+}
+.tiles .text {
+    position: absolute;
+    top: 104px;
+    left: auto;
+    font-size: 16px;
+    align-items: left;
+    inline-size: 'start';
 }
 
 footer {
@@ -484,13 +546,25 @@ main {
     aspect-ratio: 1/1;
     object-fit: contain;
 }
-
+.tile .text {
+    position: absolute ;
+    top: 16px;
+    left: 0px;
+    font-size: 16px;
+}
 .tiles-1 {
     flex: 1;
     max-width: 100%;
     height: auto;
 }
-
+.tiles-1 .text {
+    position: absolute;
+    top: 104px;
+    left: auto;
+    font-size: 16px;
+    align-items: left;
+    inline-size: 'start';
+}
 .tiles {
 
     display: grid;
@@ -508,7 +582,14 @@ main {
     aspect-ratio: 1/1;
     object-fit: contain;
 }
-
+.tiles .text {
+    position: absolute;
+    top: 104px;
+    left: auto;
+    font-size: 16px;
+    align-items: left;
+    inline-size: 'start';
+}
 footer {
     background-color: inherit;
     padding: 8px;
