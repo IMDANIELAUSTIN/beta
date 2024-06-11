@@ -121,6 +121,10 @@ main {
     align-items: center;
     justify-content: center;
     aspect-ratio: 1/1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    flex: 1;
+    border-top: 2px solid;
 
 }
 
@@ -131,17 +135,28 @@ main {
     object-fit: contain;
 }
 
-.tile-1 {
+.tiles-1 {
     flex: 1;
     max-width: 100%;
     height: auto;
 }
 
 .tiles {
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     flex: 1;
+    gap: 16px;
+
+
+}
+
+.tiles img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
 }
 
 .wrapper {
