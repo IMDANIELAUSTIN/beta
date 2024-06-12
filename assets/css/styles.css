@@ -198,11 +198,9 @@ main {
 
 .wrapper {
   height: 100vh;
-  /* This part is important for centering the content */
   display: flex;
   align-items: center;
   justify-content: center;
-  /* End center */
   background: -webkit-linear-gradient(to right, #834d9b, #d04ed6);
   background: linear-gradient(to right, #834d9b, #d04ed6);
 }
@@ -212,15 +210,15 @@ main {
   text-decoration: none;
   padding: 15px;
   background-color: #fff;
-  border-radius: 3px;
   text-transform: uppercase;
-  color: #585858;
-  font-family: 'Roboto', sans-serif;
+  color: #1e1e1e;
+  font-family: 'Helvetica Neue', sans-serif;
 }
 
 .modal {
   visibility: hidden;
   opacity: 0;
+  border-radius: 16px;
   position: fixed;
   border-radius: 16px;
   top: 0;
@@ -244,9 +242,12 @@ main {
 .modal__content {
   border-radius: 16px;
   position: fixed;
-  width: 500px;
-  background: #fff;
-  padding: 1em 2em;
+  max-width: 50%;
+  min-width: 360px;
+  max-height: 80%;
+  background: #ffffff;
+  margin: 8px;
+  padding: 16px;
   overflow-y: auto;
 
 }
@@ -262,8 +263,8 @@ main {
 }
 .modal__close {
   position: absolute;
-  top: 8px;
-  right: 8px;
+  top: 16px;
+  right: 16px;
   color: #1e1e1e;
   text-decoration: none;
 }
