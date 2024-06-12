@@ -28,6 +28,12 @@
         </nav>
     </header>
   <main>
+    <section class="filterPosts">
+    <button onclick="filterPosts('all')">All</button>
+    <button onclick="filterPosts('commercial')">Commercial</button>
+    <button onclick="filterPosts('entertainment')">Entertainment</button>
+    <button onclick="filterPosts('typography')">Print + Typography</button>
+    </section class="filterPosts">
         <section class="tiles">
             <div class="tile"><h1 style="margin-top: 16px !important; top: 50px !important; !important;">Artbound by PBS Logo Redesign</h1>                
                 <a href="#demo-modal"><img src="/images/Artbound Tile Cover.png" alt="Artbound X PBS"></a>
@@ -377,7 +383,22 @@
             // Alert the copied text (optional)
             alert("Copied the email: " + copyText.value);
         });
-    </script>
+
+                // Filter Posts
+function filterPosts(tag) {
+  var posts = document.querySelectorAll('.blog-post');
+
+  posts.forEach(function(post) {
+    var tags = post.getAttribute('data-tags').split(', ');
+
+    if (tag === 'all' || tags.includes(tag)) {
+      post.style.display = 'block';
+    } else {
+      post.style.display = 'none';
+    }
+  });
+}
+</script>
  <script src="scripts.js">
 
 

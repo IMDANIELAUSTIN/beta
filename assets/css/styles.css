@@ -91,6 +91,46 @@ nav button:active {
     max-width: 140pt;
 }
 
+.filterPosts {
+    display: inline-block;
+    text-decoration-color: #1e1e1e;
+    padding-left: 0px;
+    padding-bottom: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 10pt;
+    font-family: Roboto Mono, monospace;   
+    height: 22pt;
+}
+
+.filterPosts:hover {
+    display: inline-block;
+    text-decoration-color: #1e1e1e;
+    padding-left: 0px;
+    padding-bottom: 16px;
+    padding-right: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 10pt;
+    font-family: Roboto Mono, monospace;   
+    font-weight: bolder;
+    height: 22pt;
+}
+
+.filterPosts:active {
+    display: inline-flex;
+    text-decoration-color: #1e1e1e;
+    background-color: #333;
+    padding-left: 0px;
+    padding-bottom: 16px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-size: 10pt;
+    font-family: Roboto Mono, monospace;    
+    height: 22pt;
+    font-weight: bolder;
+}
+
 button {
     display: inline-flex;
     align-items: center;
