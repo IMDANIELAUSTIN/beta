@@ -148,8 +148,7 @@ button:active {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     flex: 1;
-    border-top: 2px solid;
-
+    border-top: 2pt solid;
 }
 
 .tile img {
@@ -440,8 +439,7 @@ a:any-link {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     flex: 1;
-    border-top: 2px solid;
-
+    border-top: 2pt solid;
 }
 
 .tile img {
@@ -559,8 +557,7 @@ a:any-link {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     flex: 1;
-    border-top: 2px solid;
-
+    border-top: 2pt solid;
 }
 
 .tile img {
@@ -676,8 +673,7 @@ a:any-link {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr);
     flex: 1;
-    border-top: 2px solid;
-
+    border-top: 2pt solid;
 }
 
 .tile img {
