@@ -379,11 +379,23 @@ object-fit: cover;
     background-color: rgba(0,0,0,0.8);
 }
 
-footer {
-    background-color: inherit;
-    padding: 16px;
-    text-align: center;
-}
+.footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+            font-size: 12px;
+            color: #666;
+        }
+
+.footer a {
+            color: #666;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+.footer a:hover {
+            text-decoration: underline;
+        }
 
 @media (max-width: 1024px) {
 main {
@@ -683,8 +695,11 @@ a:any-link {
     align-items: left;
     inline-size: 'start';
 }
-footer {
-    background-color: inherit;
-    padding: 8px;
-    text-align: center;
-}
+.footer {
+                font-size: 10px;
+                padding: 8px;
+            }
+
+.footer a {
+                margin: 0 5px;
+            }
