@@ -217,9 +217,7 @@ button:active {
 .modal {
   visibility: hidden;
   opacity: 0;
-  border-radius: 16px;
   position: fixed;
-  border-radius: 16px;
   top: 0;
   right: 0;
   bottom: 0;
