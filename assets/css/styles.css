@@ -1,3 +1,8 @@
+main {
+    display: inline-grid;
+    padding: 16px;
+}
+
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0;
@@ -125,12 +130,6 @@ button:active {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto Bold, "Helvetica Neue Bold", Arial Black , sans-serif;
     height: 22pt;
     max-width: 140pt;
-}
-
-main {
-    display: flex;
-    flex-grow: 1;
-    padding: 16px;
 }
 
 .tile {
@@ -379,7 +378,7 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    main {
+main {
         flex-direction: column;
     }
   
@@ -579,7 +578,7 @@ h1 , h2 {
     padding: auto;
     max-width: 100%;
     text-wrap: auto;
-    font-size: 24pt;
+    font-size: 20pt;
 }
 
 pre , p {
@@ -588,7 +587,7 @@ pre , p {
     padding: auto;
     max-width: 100%;
     text-wrap: auto;
-    font-size: 16pt;
+    font-size: 12pt;
 }
 
 .tile {
@@ -636,8 +635,6 @@ pre , p {
     grid-template-rows: repeat(1, 1fr);
     flex: 1;
     gap: 16px;
-
-
 }
 
 .tiles img {
