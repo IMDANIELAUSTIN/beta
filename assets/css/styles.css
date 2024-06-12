@@ -2,10 +2,10 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     margin: 0;
     padding: 8px;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     height: auto;
-    max-width: 100vw;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -16,6 +16,24 @@ header {
     padding: 16px;
     background-color: inherit;
 
+}
+
+h1 , h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    display: inline-flex;
+    padding: auto;
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 24pt;
+}
+
+pre , p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    display: inline-flex;
+    padding: auto;
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 16pt;
 }
 
 .logo {
@@ -243,9 +261,6 @@ main {
   color: #585858;
   text-decoration: none;
 }
-body {
-    font-family: "Helvetica Neue" , Arial, sans-serif;
-}
 
 .gallery {
     display: flex;
@@ -367,6 +382,24 @@ footer {
     main {
         flex-direction: column;
     }
+  
+h1 , h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    display: inline-flex;
+    padding: auto;
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 24pt;
+}
+
+pre , p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    display: inline-flex;
+    padding: auto;
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 16pt;
+}
 
 .tile {
     background-color: inherit;
@@ -444,7 +477,24 @@ footer {
     main {
         flex-direction: column;
     }
+h1 , h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    display: inline-flex;
+    padding: auto;
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 24pt;
+}
 
+pre , p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    display: inline-flex;
+    padding: auto;
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 16pt;
+}
+    
 .tile {
     background-color: inherit;
     display: inline-block;
@@ -521,6 +571,24 @@ main {
     display: flex;
     flex-grow: 1;
     padding: 8px;
+}
+    
+h1 , h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    display: inline-flex;
+    padding: auto;
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 24pt;
+}
+
+pre , p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    display: inline-flex;
+    padding: auto;
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 16pt;
 }
 
 .tile {
