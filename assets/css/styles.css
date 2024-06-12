@@ -408,6 +408,12 @@ pre , p {
     font-size: 16pt;
 }
 
+a:any-link {
+    color: #1e1e1e;
+    text-decoration-line: none;
+    cursor: auto;
+}
+
 .tile {
     background-color: inherit;
     display: inline-block;
@@ -500,6 +506,12 @@ pre , p {
     max-width: 100%;
     text-wrap: auto;
     font-size: 16pt;
+}
+
+a:any-link {
+    color: #1e1e1e;
+    text-decoration-line: none;
+    cursor: auto;
 }
     
 .tile {
@@ -596,6 +608,12 @@ pre , p {
     max-width: 100%;
     text-wrap: auto;
     font-size: 16pt;
+}
+
+a:any-link {
+    color: #1e1e1e;
+    text-decoration-line: none;
+    cursor: auto;
 }
 
 .tile {
