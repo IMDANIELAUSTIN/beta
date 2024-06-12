@@ -30,7 +30,7 @@ h1 , h2 {
     padding: auto;
     max-width: 100%;
     text-wrap: auto;
-    font-size: 24pt;
+    font-size: 20pt;
 }
 
 pre , p {
@@ -39,7 +39,7 @@ pre , p {
     padding: auto;
     max-width: 100%;
     text-wrap: auto;
-    font-size: 16pt;
+    font-size: 12pt;
 }
 
 a:any-link {
@@ -162,7 +162,7 @@ button:active {
     position: absolute;
     top: 16px;
     left: 0px;
-    font-size: 16px;
+    font-size: 12pt;
 }
 
 .tile h1 , h2 , pre  {
@@ -170,7 +170,7 @@ button:active {
     padding: 0px;
     top: 104px;
     left: 24px;
-    font-size: 16px;
+    font-size: 12pt;
 }
 
 .tiles {
@@ -191,7 +191,7 @@ button:active {
     position: absolute;
     top: 104px;
     left: auto;
-    font-size: 16px;
+    font-size: 12pt;
     align-items: left;
     inline-size: 'start';
 }
@@ -208,7 +208,7 @@ button:active {
 .wrapper a {
   display: inline-block;
   text-decoration: none;
-  padding: 15px;
+  padding: 16px;
   background-color: #fff;
   text-transform: uppercase;
   color: #1e1e1e;
@@ -297,7 +297,7 @@ button:active {
 .photo img {
 width: 100%;
 height: 100%;
-border-radius: 4px;
+border-radius: 16px;
 object-fit: cover;
 }
 
@@ -398,7 +398,7 @@ h1 , h2 {
     padding: auto;
     max-width: 100%;
     text-wrap: auto;
-    font-size: 24pt;
+    font-size: 20pt;
 }
 
 pre , p {
@@ -407,7 +407,7 @@ pre , p {
     padding: auto;
     max-width: 100%;
     text-wrap: auto;
-    font-size: 16pt;
+    font-size: 12pt;
 }
 
 a:any-link {
@@ -440,7 +440,7 @@ a:any-link {
     position: absolute ;
     top: 16px;
     left: 0px;
-    font-size: 16px;
+    font-size: 12pt;
 }
 
 .tiles-1 {
@@ -453,7 +453,7 @@ a:any-link {
     position: absolute ;
     top: 16px;
     left: 0px;
-    font-size: 16px;
+    font-size: 12pt;
 }
 
 .tiles {
@@ -478,7 +478,7 @@ a:any-link {
     position: absolute;
     top: 104px;
     left: auto;
-    font-size: 16px;
+    font-size: 12pt;
     align-items: left;
     inline-size: 'start';
 }
@@ -500,7 +500,7 @@ h1 , h2 {
     padding: auto;
     max-width: 100%;
     text-wrap: auto;
-    font-size: 24pt;
+    font-size: 20pt;
 }
 
 pre , p {
@@ -509,7 +509,7 @@ pre , p {
     padding: auto;
     max-width: 100%;
     text-wrap: auto;
-    font-size: 16pt;
+    font-size: 12pt;
 }
 
 a:any-link {
@@ -541,7 +541,7 @@ a:any-link {
     position: absolute ;
     top: 16px;
     left: 0px;
-    font-size: 16px;
+    font-size: 12pt;
 }
 
 .tiles-1 {
@@ -554,7 +554,7 @@ a:any-link {
     position: absolute;
     top: 104px;
     left: auto;
-    font-size: 16px;
+    font-size: 12pt;
     align-items: left;
     inline-size: 'start';
 }
@@ -579,7 +579,7 @@ a:any-link {
     position: absolute;
     top: 104px;
     left: auto;
-    font-size: 16px;
+    font-size: 12pt;
     align-items: left;
     inline-size: 'start';
 }
@@ -602,7 +602,7 @@ h1 , h2 {
     padding: auto;
     max-width: 100%;
     text-wrap: auto;
-    font-size: 24pt;
+    font-size: 20pt;
 }
 
 pre , p {
@@ -611,7 +611,7 @@ pre , p {
     padding: auto;
     max-width: 100%;
     text-wrap: auto;
-    font-size: 16pt;
+    font-size: 12pt;
 }
 
 a:any-link {
@@ -643,7 +643,7 @@ a:any-link {
     position: absolute ;
     top: 16px;
     left: 0px;
-    font-size: 16px;
+    font-size: 12pt;
 }
 .tiles-1 {
     flex: 1;
@@ -654,7 +654,7 @@ a:any-link {
     position: absolute;
     top: 104px;
     left: auto;
-    font-size: 16px;
+    font-size: 12pt;
     align-items: left;
     inline-size: 'start';
 }
@@ -679,7 +679,7 @@ a:any-link {
     position: absolute;
     top: 104px;
     left: auto;
-    font-size: 16px;
+    font-size: 12pt;
     align-items: left;
     inline-size: 'start';
 }
