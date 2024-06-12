@@ -56,8 +56,8 @@ nav button {
     text-decoration-color: #1e1e1e;
     padding: 0 16px;
     cursor: pointer;
-    border-radius: 8px;
-    font-size: 8pt;
+    border-radius: 16px;
+    font-size: 12pt;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     height: 22pt;
     max-width: 140pt;
@@ -70,9 +70,9 @@ nav button:hover {
     padding: 0 16px;
     cursor: pointer;
     border-color: #1e1e1e;
-    border-radius: 8px;
+    border-radius: 16px;
     text-decoration-color: inherit;
-    font-size: 8pt;
+    font-size: 12pt;
     font-weight: bolder ;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto Bold, "Helvetica Neue Bold", Arial Black , sans-serif;
     height: 22pt;
@@ -84,8 +84,8 @@ nav button:active {
     background-color: #333;
     padding: 0 16px;
     cursor: pointer;
-    border-radius: 8px;
-    font-size: 8pt;
+    border-radius: 16px;
+    font-size: 12pt;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     height: 22pt;
     max-width: 140pt;
@@ -99,9 +99,9 @@ button {
     cursor: pointer;
     background-color: #ffffff;
     border-color: #1e1e1e;
-    border-radius: 8px;
+    border-radius: 16px;
     text-decoration-color: #1e1e1e;
-    font-size: 8pt;
+    font-size: 12pt;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     height: 22pt;
     max-width: 140pt;
@@ -114,9 +114,9 @@ button:hover {
     padding: 0 16px;
     cursor: pointer;
     border-color: #1e1e1e;
-    border-radius: 8px;
+    border-radius: 16px;
     text-decoration-color: inherit;
-    font-size: 8pt;
+    font-size: 12pt;
     font-weight: bolder ;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto Bold, "Helvetica Neue Bold", Arial Black , sans-serif;
     height: 22pt;
@@ -132,7 +132,7 @@ button:active {
     border-color: #1e1e1e;
     border-radius: 8px;
     text-decoration-color: inherit;
-    font-size: 8pt;
+    font-size: 12pt;
     font-weight: bolder ;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto Bold, "Helvetica Neue Bold", Arial Black , sans-serif;
     height: 22pt;
