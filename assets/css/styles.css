@@ -380,17 +380,20 @@ object-fit: cover;
 }
 
 .footer {
+            position: sticky ;
             text-align: center;
-            padding: 10px;
-            background-color: #f1f1f1;
+            padding: 8px;
+            background-color: #ffffff;
             font-size: 12px;
-            color: #666;
         }
 
 .footer a {
-            color: #666;
-            text-decoration: none;
-            margin: 0 10px;
+            color: #1e1e1e;
+            position: sticky ;
+            display: inline-block;
+            text-align: center;
+            padding: 8px;
+            font-size: 12px;
         }
 
 .footer a:hover {
@@ -495,11 +498,28 @@ a:any-link {
     inline-size: 'start';
 }
 
-footer {
-    background-color: inherit;
-    padding: 16px;
-    text-align: center;
-}
+.footer {
+            position: relative ;
+            display: block ;
+            text-align: center;
+            padding: 8px;
+            background-color: #ffffff;
+            font-size: 12px;
+        }
+
+.footer a {
+            color: #1e1e1e;
+            position: relative ;
+            display: block;
+            text-align: center;
+            padding: 8px;
+            font-size: 12px;
+        }
+
+.footer a:hover {
+            text-decoration: underline;
+        }
+
 @media (max-width: 678px) {
 main {
     display: inline;
@@ -596,11 +616,26 @@ a:any-link {
     inline-size: 'start';
 }
 
-footer {
-    background-color: inherit;
-    padding: 16px;
-    text-align: center;
-}
+.footer {
+            position: sticky ;
+            text-align: center;
+            padding: 8px;
+            background-color: #ffffff;
+            font-size: 12px;
+        }
+
+.footer a {
+            color: #1e1e1e;
+            position: sticky ;
+            display: block;
+            text-align: center;
+            padding: 8px;
+            font-size: 12px;
+        }
+
+.footer a:hover {
+            text-decoration: underline;
+        }
 @media (max-width: 320px) {
 main {
     display: flex;
