@@ -11,7 +11,7 @@ main {
     display: flex;
     justify-content: center; /* Horizontally center */
     align-items: center; /* Vertically center */
-    max-width: 100%; /* Full viewport height */
+    max-width: 100; /* Full viewport height */
     flex-wrap: wrap;
 }
 
@@ -37,6 +37,7 @@ main {
     justify-content: center;
     text-align: center; /* Center text within the container */
     text-wrap: wrap ;
+    max-width: 100; /* Full viewport height */
 }
 
 header {
