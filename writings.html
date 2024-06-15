@@ -21,20 +21,21 @@
                 </span>
             </a>
         </div>
-        <nav>
+        <nav style="margin: 8px">
             <button id="copyEmailBtn">EMAIL ME</button>
-            <a href="https://beta.imdanielaustin.com/About"><button>RÉSUMÉ</button></a>
-            <a href="https://beta.imdanielaustin.com/writings"><button>WRITINGS</button></a>
+            <a href="/About"><button>RÉSUMÉ</button></a>
+            <a href="/writings"><button>WRITINGS</button></a>
+        </nav>
+        <nav style="margin: 8px">
+        <section class="filterPosts">
+        <button onclick="filterPosts('all')">ALL</button>
+        <button onclick="filterPosts('design')">DESIGN</button>
+        <button onclick="filterPosts('fintech')">FINTECH</button>
+        <button onclick="filterPosts('op-ed')">OP-ED</button>
+        </section class="filterPosts">
         </nav>
     </header>
 <main>
-    <section class="filterPosts">
-    <button onclick="filterPosts('all')">All</button>
-    <button onclick="filterPosts('design')">Design</button>
-    <button onclick="filterPosts('fintech')">FinTech</button>
-    <button onclick="filterPosts('op-ed')">Op-Ed</button>
-    </section class="filterPosts">
-
         <section class="tiles">
             <div class="tile tile-1">
                 <a href="https://example.com/page1"><img src="/images/Cadillac Tile Cover.png" alt="Blog Name — XX/XX/XXXX"></a>
