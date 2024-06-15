@@ -986,10 +986,9 @@ nav button:active {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
+    font-family: Roboto Mono, monospace;   
+    height: 22pt;
+    margin: 0;
 }
 
 .filterPosts:hover {
@@ -1289,22 +1288,22 @@ nav button:active {
 
 .filterPosts {
     background-color: #ffffff;
-    display: inline-flex;
+    display: flex;
     flex: 1 1 auto;
     align-items: center;
     justify-content: center;
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    }
+    font-family: Roboto Mono, monospace;   
+    height: 22pt;
+    margin: 0;
+    max-width: 100;
+}
 
 .filterPosts:hover {
     background-color: #ffffff;
-    display: inline-flex;
+    display: flex;
     flex: 1 1 auto;
     align-items: center;
     justify-content: center;
@@ -1314,11 +1313,13 @@ nav button:active {
     font-family: Roboto Mono, monospace;   
     font-weight: bolder;
     height: 22pt;
+    margin: 0;
+    max-width: 100;
 }
 
 .filterPosts:active {
     background-color: #ffffff;
-    display: inline-flex;
+    display: flex;
     flex: 1 1 auto;
     align-items: center;
     justify-content: center;
@@ -1328,26 +1329,28 @@ nav button:active {
     font-family: Roboto Mono, monospace;    
     height: 22pt;
     font-weight: bolder;
+        margin: 0;
+    max-width: 100;
 }
 
 button {
-    background-color: #ffffff;
-    display: inline-flex;
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    cursor: pointer;
-    font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-}
+            background-color: #ffffff;
+            display: flex;
+            flex: 1 1 auto;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            cursor: pointer;
+            font-size: 10pt;
+            font-family: Roboto Mono, monospace;
+            height: 22pt;
+            max-width: 140pt;
+        
+        }
 
 button:hover {
     background-color: #ffffff;
-    display: inline-flex;
+    display: flex;
     flex: 1 1 auto;
     align-items: center;
     justify-content: center;
@@ -1385,8 +1388,6 @@ button:active {
     grid-template-rows: repeat(1, 1fr);
     flex: 1;
     border-top: 2pt solid;
-    max-width: 100%;
-    justify-content: center;
 }
 
 .tile img {
@@ -1402,6 +1403,20 @@ button:active {
     font-size: 12pt;
 }
 
+.tiles-1 {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.tiles-1 .text {
+    position: absolute;
+    top: 104px;
+    left: auto;
+    font-size: 12pt;
+    align-items: left;
+    inline-size: 'start';
+}
 .tiles {
 
     display: grid;
@@ -1409,8 +1424,7 @@ button:active {
     grid-template-rows: repeat(1, 1fr);
     flex: 1;
     gap: 16px;
-    max-width: 100%;
-    justify-content: center ;
+
 
 }
 
@@ -1469,44 +1483,55 @@ main {
     display: flex;
     flex-grow: 1;
     padding: 8px;
+        max-width: 100;
+
 }
     
-    
+
 .masthead {
     background-color: #ffffff;
     margin: 0px;
-    padding: 64px 0px;
-    text-align: center ;
-    flex-wrap: wrap ;
-        margin: 0;
-    max-width: 100;
+    padding: 120px;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    max-width: 100%; /* Full viewport height */
+    flex-wrap: wrap;
 }
 
 .tagline {
-    text-align: center ;
+    color: #1e1e1e;
+    display: inline-block;
     font-size: 20pt;
-    font-weight: bold;
+    text-align: center; /* Center text within the container */
+    text-wrap: wrap ;
+}
+
+.tagline h2, .tagline p, .tagline pre {
+    color: #1e1e1e;
+    display: inline-block;
+    font-size: 12pt;
+    text-align: center; /* Center text within the container */
+    text-wrap: wrap ;
+}
+
+.tagline h2, .tagline p, .tagline pre {
+    color: #1e1e1e;
+    display: inline-block;
+    font-size: 12pt;
+    text-align: center; /* Center text within the container */
+    text-wrap: wrap ;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center; /* Center text within the container */
+    text-wrap: wrap ;
         margin: 0;
-    max-width: 100;
-}
-
-header {
-    display: inline-block;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px;
-    background-color: inherit;
-        margin: 0;
-    max-width: 100;
 
 }
-
 body {
     font-family: Roboto Mono, monospace;    
     margin: 0;
@@ -1516,7 +1541,9 @@ body {
     height: auto;
     max-width: 100%;
     overflow-x: hidden;
-}    
+        max-width: 100;
+}  
+    
 h1 , h2 {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
     display: inline-flex;
@@ -1546,18 +1573,14 @@ a:any-link {
 }
 
 nav button {
-    background-color: #ffffff;
-    display: inline-flex;
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
+    text-decoration-color: #1e1e1e;
+    padding: 0 16px;
     cursor: pointer;
+    border-radius: 16px;
     font-size: 10pt;
     font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
+    height: 22pt;
+    max-width: 100;
 }
 
 nav button:hover {
@@ -1573,7 +1596,7 @@ nav button:hover {
     font-weight: bolder ;
     font-family: Roboto Mono, monospace;    
     height: 22pt;
-    max-width: 140pt;
+    max-width: 100;
 }
 
 nav button:active {
@@ -1585,22 +1608,24 @@ nav button:active {
     font-size: 10pt;
     font-family: Roboto Mono, monospace;    
     height: 22pt;
-    max-width: 140pt;
+    max-width: 100;
 }
 
 button {
-    background-color: #ffffff;
     display: inline-flex;
-    flex: 1 1 auto;
     align-items: center;
     justify-content: center;
-    padding: 16px;
+    padding: 0 16px;
     cursor: pointer;
+    background-color: #ffffff;
+    border-color: #1e1e1e;
+    border-radius: 16px;
+    text-decoration-color: #1e1e1e;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
+    font-family: Roboto Mono, monospace; 
+    height: 22pt;
+    margin: 0;
+    max-width: 100;
     }
 
 button:hover {
@@ -1617,7 +1642,8 @@ button:hover {
     font-family: Roboto Mono, monospace;    
     height: 22pt;
     margin: 0;
-    max-width: 100;}
+    max-width: 100;
+}
 
 button:active {
     display: inline-flex;
@@ -1633,7 +1659,8 @@ button:active {
     font-family: Roboto Mono, monospace;    
     height: 22pt;
     margin: 0;
-    max-width: 100;}
+    max-width: 100;
+}
 
 .tile {
     background-color: inherit;
@@ -1646,7 +1673,7 @@ button:active {
     flex: 1;
     border-top: 2pt solid;
         margin: 0;
-    max-width: 100%;
+    max-width: 100;
 }
 
 .tile img {
@@ -1682,7 +1709,7 @@ button:active {
     flex: 1;
     gap: 16px;
     margin: 0;
-    max-width: 100%;
+    max-width: 100;
 }
 
 .tiles img {
@@ -1719,9 +1746,11 @@ button:active {
             position: static ;
                 font-size: 10pt;
                 padding: 8px;
+    max-width: 100;
             }
 
 .footer a {
                 position: static ;
                 margin: 0 5px;
+    max-width: 100;
             }
