@@ -7,21 +7,36 @@ main {
 .masthead {
     background-color: #ffffff;
     margin: 0px;
-    padding: 16px 0px;
-    text-align: center ;
-    flex-wrap: wrap ;
+    padding: 64px;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    max-width: 100%; /* Full viewport height */
+    flex-wrap: wrap;
 }
 
 .tagline {
-    text-align: center ;
+    color: #1e1e1e;
+    display: inline-block;
     font-size: 20pt;
-    font-weight: bold;
+    text-align: center; /* Center text within the container */
+    text-wrap: wrap ;
+}
+
+.tagline h2, .tagline p, .tagline pre {
+    color: #1e1e1e;
+    display: inline-block;
+    font-size: 12pt;
+    text-align: center; /* Center text within the container */
+    text-wrap: wrap ;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center; /* Center text within the container */
+    text-wrap: wrap ;
 }
 
 header {
@@ -47,7 +62,6 @@ body {
 h1 , h2 {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
     display: block;
-    padding: auto;
     max-width: 100%;
     text-wrap: auto;
     font-size: 20pt;
@@ -56,10 +70,10 @@ h1 , h2 {
 pre , p {
     font-family: Roboto Mono, monospace;    
     display: block;
-    padding: auto;
     max-width: 100%;
     text-wrap: auto;
     font-size: 12pt;
+    line-height: 1.2;
 }
 
 a:any-link {
