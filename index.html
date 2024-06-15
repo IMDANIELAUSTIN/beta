@@ -21,27 +21,27 @@
                 </span>
             </a>
         </div>
-        <nav>
+        <nav style="margin: 8px">
             <button id="copyEmailBtn">EMAIL ME</button>
-            <a href="https://beta.imdanielaustin.com/About"><button>RÉSUMÉ</button></a>
-            <a href="https://beta.imdanielaustin.com/writings"><button>WRITINGS</button></a>
+            <a href="/About"><button>RÉSUMÉ</button></a>
+            <a href="/writings"><button>WRITINGS</button></a>
         </nav>
-    </header>
-<main>
-        <nav>
+        <nav style="margin: 8px">
         <section class="filterPosts">
-        <button onclick="filterPosts('all')">All</button>
+        <button onclick="filterPosts('all')">ALL</button>
         <button onclick="filterPosts('commercial')">COMMERCIAL</button>
         <button onclick="filterPosts('entertainment')">ENTERTAINMENT</button>
         <button onclick="filterPosts('product')">PRODUCT</button>
         </section class="filterPosts">
         </nav>
-
+    </header>
+<main>
         <header class="masthead">
         <h1 class="tagline">Remarkably Iconic Logos.&nbsp;™
        <br><pre>Book A Consultation Today</pre></h1>
         </header>
-        <section class="tiles">
+
+        <section class="tiles" style="margin: 8px">
             <div class="tile">
                 <h1 style="margin-top: 16px !important; top: 50px !important; !important;">ARTBOUND BY PBS REBRAND</h1>
                 <a href="#demo-modal"><img src="/images/Artbound Tile Cover.png" alt="Artbound X PBS"></a>
@@ -678,68 +678,68 @@
         </div>
 
     </section>
-</main>
 
-<button style="padding-bottom: 16px !important; padding-top: 16px !important; margin-bottom: 8px !important; bottom: 16px !important; margin-top: 8px !important; margin-right: 8px !important;" id="myBtn" title="Back to Top">Back to Top</button>
+</main>
+<button style="padding: 8px !important; margin: 8px !important; id="myBtn" title="Back to Top" style="display: block;">Back to Top</button>
 
 <!-- FOOTER -->
-<footer>
-    <div class="footer">
-        <pre>© 2016-2024 Daniel Austin, LLC. All rights reserved.</pre>
+    <footer><div class="footer">
+        <pre>&copy; 2016-2024 Daniel Austin, LLC. All rights reserved.</pre>
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Use</a>
     </div>
-</footer>
+    </footer>
 
-<!-- Hidden input to hold the email address -->
-<input type="text" value="me@imdanielaustin.com" id="emailAddress" style="position: absolute; left: -9999px;">
+    <!-- Hidden input to hold the email address -->
+    <input type="text" value="me@imdanielaustin.com" id="emailAddress" style="position: absolute; left: -9999px;">
 
-<script>
-    // Back to Top button
-    var backToTopButton = document.getElementById("myBtn");
+ <script>
+        // Back to Top button
+        var backToTopButton = document.getElementById("myBtn");
 
-    // Show the button when scrolling down 20px
-    window.onscroll = function () {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            backToTopButton.style.display = "block";
-        } else {
-            backToTopButton.style.display = "none";
-        }
-    };
-
-    // Scroll to the top when the button is clicked
-    backToTopButton.onclick = function () {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    };
-
-    // Copy email to clipboard
-    document.getElementById('copyEmailBtn').addEventListener('click', function () {
-        var copyText = document.getElementById("emailAddress");
-        copyText.select();
-        copyText.setSelectionRange(0, 99999); // For mobile devices
-        document.execCommand("copy");
-
-        // Alert the copied text (optional)
-        alert("Copied the email: " + copyText.value);
-    });
-
-    // Filter Posts
-    function filterPosts(tag) {
-        var posts = document.querySelectorAll('.blog-post');
-
-        posts.forEach(function (post) {
-            var tags = post.getAttribute('data-tags').split(', ');
-
-            if (tag === 'all' || tags.includes(tag)) {
-                post.style.display = 'block';
+        // Show the button when scrolling down 20px
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
             } else {
-                post.style.display = 'none';
+                backToTopButton.style.display = "none";
             }
+        };
+
+        // Scroll to the top when the button is clicked
+        backToTopButton.onclick = function() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        };
+
+        // Copy email to clipboard
+        document.getElementById('copyEmailBtn').addEventListener('click', function() {
+            var copyText = document.getElementById("emailAddress");
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+            document.execCommand("copy");
+
+            // Alert the copied text (optional)
+            alert("Copied the email: " + copyText.value);
         });
+
+                // Filter Posts
+function filterPosts(tag) {
+  var posts = document.querySelectorAll('.blog-post');
+
+  posts.forEach(function(post) {
+    var tags = post.getAttribute('data-tags').split(', ');
+
+    if (tag === 'all' || tags.includes(tag)) {
+      post.style.display = 'block';
+    } else {
+      post.style.display = 'none';
     }
+  });
+}
 </script>
-<script src="scripts.js">
-</script>
+ <script src="scripts.js">
+
+
 </body>
 </html>
