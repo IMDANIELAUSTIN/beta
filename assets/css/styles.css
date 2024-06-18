@@ -104,31 +104,30 @@ a:any-link {
 
 nav button {
     background-color: #ffffff;
-    display: inline;
+    display: inline-flex;
     flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    cursor: pointer;
     font-size: 10pt;
     font-family: Roboto Mono, monospace;    
     text-align: center;
     cursor: pointer;
-    border-color: #1e1e1e;
-    border: 2px;
-    border-radius: 16px;
-    border-color: #1e1e1e;
-    margin: 0;
 }
 
 nav button:hover {
     background-color: #ffffff;
-    display: inline;
+    display: inline-flex;
     flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    cursor: pointer;
     font-size: 10pt;
     font-family: Roboto Mono, monospace;    
     text-align: center;
     cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
     font-weight: bolder ;
     margin: 0;
 
@@ -271,51 +270,50 @@ nav button:active {
 }
 
 button {
-    background-color: #ffffff;
-    display: inline;
+     background-color: #ffffff;
+    display: inline-flex;
     flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    cursor: pointer;
     font-size: 10pt;
     font-family: Roboto Mono, monospace;    
     text-align: center;
     cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-    margin: 0;
 }
 
 button:hover {
     background-color: #ffffff;
-    display: inline;
+    display: inline-flex;
     flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    cursor: pointer;
     font-size: 10pt;
     font-family: Roboto Mono, monospace;    
     text-align: center;
     cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
     font-weight: bolder ;
-    margin: 0;
+    margin: 8px;
 
 }
 
 button:active {
     background-color: #ffffff;
-    display: inline;
+    display: inline-flex;
     flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    cursor: pointer;
     font-size: 10pt;
     font-family: Roboto Mono, monospace;    
     text-align: center;
     cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
     font-weight: bolder ;
-    margin: 0;
+    margin: 8px;
 
 }
 
@@ -897,8 +895,7 @@ main {
         background-color: #000000;
     }
     .nav-links {
-        position: fixed;
-        top: 44px;
+        position: relative;
         right: 0;
         height: 0;
         width: 100%;
@@ -1104,7 +1101,6 @@ button {
             font-size: 10pt;
             font-family: Roboto Mono, monospace;
             height: 22pt;
-            max-width: 140pt;
         
         }
 
@@ -1120,7 +1116,6 @@ button:hover {
     font-weight: bolder ;
     font-family: Roboto Mono, monospace;    
     height: 22pt;
-    max-width: 140pt;
 }
 
 button:active {
@@ -1135,7 +1130,6 @@ button:active {
     font-weight: bolder ;
     font-family: Roboto Mono, monospace;    
     height: 22pt;
-    max-width: 140pt;
 }
     
 .tile {
@@ -1452,7 +1446,7 @@ a:any-link {
 
 button {
             background-color: #ffffff;
-            display: flex;
+            display: inline-flex;
             flex: 1 1 auto;
             align-items: center;
             justify-content: center;
@@ -1461,13 +1455,12 @@ button {
             font-size: 10pt;
             font-family: Roboto Mono, monospace;
             height: 22pt;
-            max-width: 140pt;
         
         }
 
 button:hover {
     background-color: #ffffff;
-    display: flex;
+    display: inline-flex;
     flex: 1 1 auto;
     align-items: center;
     justify-content: center;
@@ -1477,7 +1470,6 @@ button:hover {
     font-weight: bolder ;
     font-family: Roboto Mono, monospace;    
     height: 22pt;
-    max-width: 140pt;
 }
 
 button:active {
@@ -1492,7 +1484,6 @@ button:active {
     font-weight: bolder ;
     font-family: Roboto Mono, monospace;    
     height: 22pt;
-    max-width: 140pt;
 }
     
 .tile {
@@ -1649,19 +1640,20 @@ main {
 }
    
 nav button {
-    background-color: #ffffff;
-    display: inline-flex;
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    cursor: pointer;
-    font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-}
+        background-color: #ffffff;
+        display: inline-flex;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        cursor: pointer;
+        font-size: 10pt;
+        font-family: Roboto Mono, monospace;
+        text-align: center;
+        cursor: pointer;
+        gap: 16px;
+    
+    }
 
 nav button:hover {
     background-color: #ffffff;
@@ -1840,23 +1832,18 @@ a:any-link {
 }
 
 button {
-    background-color: #ffffff;
-    display: inline-flex;
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    cursor: pointer;
-    font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-    margin: 0;
-}
+            background-color: #ffffff;
+            display: inline-flex;
+            flex: 1 1 auto;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            cursor: pointer;
+            font-size: 10pt;
+            font-family: Roboto Mono, monospace;
+            height: 22pt;
+        
+        }
 
 button:hover {
     background-color: #ffffff;
@@ -1867,16 +1854,9 @@ button:hover {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
     font-weight: bolder ;
-        margin: 0;
-
+    font-family: Roboto Mono, monospace;    
+    height: 22pt;
 }
 
 button:active {
@@ -1888,19 +1868,10 @@ button:active {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
     font-weight: bolder ;
-        margin: 0;
-
+    font-family: Roboto Mono, monospace;    
+    height: 22pt;
 }
-
-
 .tile {
     background-color: inherit;
     display: inline-block;
