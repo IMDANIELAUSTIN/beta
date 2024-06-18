@@ -3,15 +3,17 @@
     var $window = $(window),
         $body = $('body');
 
-    // Breakpoints.
-    breakpoints({
-        xlarge:   [ '1281px',  '1680px' ],
-        large:    [ '981px',   '1280px' ],
-        medium:   [ '737px',   '980px'  ],
-        small:    [ '481px',   '736px'  ],
-        xsmall:   [ '361px',   '480px'  ],
-        xxsmall:  [ null,      '360px'  ]
-    });
+    // Ensure breakpoints is defined
+    if (typeof breakpoints !== 'undefined') {
+        breakpoints({
+            xlarge:   [ '1281px',  '1680px' ],
+            large:    [ '981px',   '1280px' ],
+            medium:   [ '737px',   '980px'  ],
+            small:    [ '481px',   '736px'  ],
+            xsmall:   [ '361px',   '480px'  ],
+            xxsmall:  [ null,      '360px'  ]
+        });
+    }
 
     // Play initial animations on page load.
     $window.on('load', function() {
@@ -21,7 +23,7 @@
     });
 
     // Touch?
-    if (browser.mobile)
+    if (typeof browser !== 'undefined' && browser.mobile)
         $body.addClass('is-touch');
 
     // Forms.
@@ -31,8 +33,7 @@
     $form.find('textarea').each(function() {
 
         var $this = $(this),
-            $wrapper = $('<div class="textarea-wrapper"></div>'),
-            $submits = $this.find('input[type="submit"]');
+            $wrapper = $('<div class="textarea-wrapper"></div>');
 
         $this
             .wrap($wrapper)
@@ -60,9 +61,17 @@
             .triggerHandler('--init');
 
         // Fix.
-        if (browser.name == 'ie' || browser.mobile)
+        if (typeof browser !== 'undefined' && (browser.name == 'ie' || browser.mobile))
             $this.css('max-height', '10em').css('overflow-y', 'auto');
     });
+
+    // Nav.
+    const navIcon = document.querySelector(".nav-icon");
+    const nav = document.querySelector("nav");
+
+    navIcon.onclick = function () {
+        nav.classList.toggle('show');
+    }
 
     // Menu.
     var $menu = $('#menu');
