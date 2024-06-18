@@ -14,33 +14,38 @@
 </head>
 <body>
     <header>
-        <div>
+<nav>
+    <div class="nav-content">
+    
+        <!-- logo -->
             <a href="/index" class="logo">
                 <span class="symbol">
                     <img src="/images/ASTNDSGN Logomark Short Animation Alpha Loop Once.gif" alt="" width="30" height="30" style="display: block;">
                 </span>
             </a>
+        
+        <!-- navigation -->
+        <div class="nav-icon">
+            <div class="bar one"></div>
+            <div class="bar two"></div>
         </div>
-        <nav style="margin: 8px">
+        
+        <!-- naviagtion links -->
+        <div class="nav-links">
+            <a href="#">RÉSUMÉ</a>
+            <a href="#">WRITINGS</a>
             <button id="copyEmailBtn">EMAIL ME</button>
-            <a href="/About"><button>RÉSUMÉ</button></a>
-            <a href="/writings"><button>WRITINGS</button></a>
-        </nav>
-        <nav style="margin: 8px">
-        <section class="filterPosts">
-        <button onclick="filterPosts('all')">ALL</button>
-        <button onclick="filterPosts('commercial')">COMMERCIAL</button>
-        <button onclick="filterPosts('entertainment')">ENTERTAINMENT</button>
-        <button onclick="filterPosts('product')">PRODUCT</button>
-        </section class="filterPosts">
-        </nav>
+        </div>
+    </div>
+</nav>
     </header>
+        <!-- masthead -->
 <main>
         <header class="masthead">
         <h1 class="tagline">Remarkably Iconic Logos.&nbsp;™
        <br><pre>Book A Consultation Today</pre></h1>
         </header>
-
+        <!-- Main Content -->
         <section class="tiles" style="margin: 8px">
             <div class="tile">
                 <h1 style="margin-top: 16px !important; top: 50px !important; !important;">ARTBOUND BY PBS REBRAND</h1>
@@ -493,8 +498,9 @@
     <input type="text" value="me@imdanielaustin.com" id="emailAddress" style="position: absolute; left: -9999px;">
 
  <script>
+    document.addEventListener("DOMContentLoaded", function() {
         // Back to Top button
-        var backToTopButton = document.getElementById("myBtn");
+        const backToTopButton = document.getElementById("myBtn");
 
         // Show the button when scrolling down 20px
         window.onscroll = function() {
@@ -512,32 +518,49 @@
         };
 
         // Copy email to clipboard
-        document.getElementById('copyEmailBtn').addEventListener('click', function() {
-            var copyText = document.getElementById("emailAddress");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999); // For mobile devices
-            document.execCommand("copy");
+        const copyEmailBtn = document.getElementById('copyEmailBtn');
+        const emailAddress = document.getElementById("emailAddress");
 
-            // Alert the copied text (optional)
-            alert("Copied the email: " + copyText.value);
-        });
+        if (copyEmailBtn && emailAddress) {
+            copyEmailBtn.addEventListener('click', function() {
+                emailAddress.select();
+                emailAddress.setSelectionRange(0, 99999); // For mobile devices
+                document.execCommand("copy");
 
-                // Filter Posts
-function filterPosts(tag) {
-  var posts = document.querySelectorAll('.blog-post');
+                // Alert the copied text (optional)
+                alert("Copied the email: " + emailAddress.value);
+            });
+        }
 
-  posts.forEach(function(post) {
-    var tags = post.getAttribute('data-tags').split(', ');
+        // Nav
+        const navIcon = document.querySelector(".nav-icon");
+        const nav = document.querySelector("nav");
 
-    if (tag === 'all' || tags.includes(tag)) {
-      post.style.display = 'block';
-    } else {
-      post.style.display = 'none';
-    }
-  });
-}
+        if (navIcon && nav) {
+            navIcon.onclick = function () {
+                nav.classList.toggle('show');
+            };
+        }
+
+        // Filter Posts
+        function filterPosts(tag) {
+            const posts = document.querySelectorAll('.blog-post');
+
+            posts.forEach(post => {
+                const tags = post.getAttribute('data-tags').split(', ');
+
+                if (tag === 'all' || tags.includes(tag)) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        }
+
+        window.filterPosts = filterPosts; // Expose the function to global scope if needed
+    });
 </script>
- <script src="scripts.js">
+<script src="scripts.js"></script>
 
 
 </body>
