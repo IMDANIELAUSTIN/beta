@@ -160,14 +160,23 @@ nav button:active {
     padding: 0 20px;
     display: flex;
     justify-content: space-between;
-}
-.nav-content a {
-    display: block;
-    font-size: 14px;
+    font-size: 12pt;
     line-height: 44px;
     text-decoration: none;
     transition: all 0.3s;
-    color: #ffffff;
+    color: #1e1e1e;
+}
+.nav-content a {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12pt;
+    line-height: 44px;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #1e1e1e;
 }
 .nav-content a:hover,
 .nav-icon:hover,
