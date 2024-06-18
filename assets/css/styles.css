@@ -1022,15 +1022,15 @@ nav button:active {
 }
 
     .show {
-        background-color: #000000;
+        background-color: #ffffff;
     }
     .nav-links {
         position: fixed;
-        top: 44px;
+        top: 60px;
         right: 0;
         height: 0;
         width: 100%;
-        background: #333333;
+        background: inherit;
         flex-direction: column;
         justify-content: flex-start;
         transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
@@ -1038,7 +1038,7 @@ nav button:active {
     }
     .show .nav-links {
         height: 100%;
-        background-color: #000000;
+        background-color: inherit;
     }
     .nav-links a {
         height: 0;
@@ -1374,7 +1374,7 @@ nav button:active {
     display: none;
     grid-gap: 5px;
     grid-template-columns: auto;
-    padding: 17px 0;
+    padding: 16px 0;
     height: 10px;
     cursor: pointer;
     transition: all 0.3s;
@@ -1393,23 +1393,22 @@ nav button:active {
 }
 
     .show {
-        background-color: #000000;
+        background-color: #ffffff;
     }
     .nav-links {
-        position: fixed;
-        top: 44px;
+        top: 54px;
         right: 0;
         height: 0;
         width: 100%;
-        background: #333333;
+        background: #ffffff;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-evenly;
         transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
             background-color 0.3s;
     }
     .show .nav-links {
         height: 100%;
-        background-color: #000000;
+        background-color: inherit;
     }
     .nav-links a {
         height: 0;
@@ -1769,15 +1768,15 @@ nav button:active {
 }
 
     .show {
-        background-color: #000000;
+        background-color: #ffffff;
     }
     .nav-links {
         position: fixed;
-        top: 44px;
+        top: 54px;
         right: 0;
         height: 0;
         width: 100%;
-        background: #333333;
+        background: #ffffff;
         flex-direction: column;
         justify-content: flex-start;
         transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
@@ -1785,7 +1784,7 @@ nav button:active {
     }
     .show .nav-links {
         height: 100%;
-        background-color: #000000;
+        background-color: inherit;
     }
     .nav-links a {
         height: 0;
