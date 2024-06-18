@@ -6,7 +6,7 @@ main {
 
 .masthead {
     background-color: #ffffff;
-     margin: 8px;
+    margin: 0px;
     padding: 120px;
     display: flex;
     justify-content: center; /* Horizontally center */
@@ -45,7 +45,7 @@ main {
     justify-content: center;
     text-align: center; /* Center text within the container */
     text-wrap: wrap ;
-     margin: 8px;
+        margin: 0;
 
 }
 
@@ -67,7 +67,7 @@ body {
     height: auto;
     max-width: 100%;
     overflow-x: hidden;
-     margin: 8px;
+        margin: 0;
 }
 
 h1 , h2 {
@@ -114,8 +114,6 @@ nav button {
     border-color: #1e1e1e;
     border: 2;
     border-radius: 16px;
-         margin: 8px;
-
 }
 
 nav button:hover {
@@ -132,7 +130,7 @@ nav button:hover {
     border: 2;
     border-radius: 16px;
     font-weight: bolder ;
-     margin: 8px;
+        margin: 0;
 
 }
 
@@ -152,8 +150,56 @@ nav button:active {
     border: 2;
     border-radius: 16px;
     font-weight: bolder ;
-     margin: 8px;
+        margin: 0;
 
+}
+
+.nav-content {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-content a {
+    display: block;
+    font-size: 14px;
+    line-height: 44px;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #ffffff;
+}
+.nav-content a:hover,
+.nav-icon:hover,
+.search-icon:hover {
+    opacity: 0.7;
+}
+.nav-links {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-icon {
+    display: none;
+    grid-gap: 5px;
+    grid-template-columns: auto;
+    padding: 17px 0;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.bar {
+    height: 1px;
+    width: 18px;
+    background: white;
+    transition: 0.5s;
+}
+.show .one {
+    transform: rotate(45deg) translateY(5.5px);
+}
+.show .two {
+    transform: rotate(-45deg) translateY(-5.5px);
 }
 
 .filterPosts {
@@ -834,14 +880,101 @@ button:active {
             text-decoration: underline;
         }
 
-@media (max-width: 678px) {
+@media (max-width: 768px) {
 main {
     display: inline;
     flex-grow: 1;
     padding: 8px;
 }
+   .show {
+        background-color: #000000;
+    }
+    .nav-links {
+        position: fixed;
+        top: 44px;
+        right: 0;
+        height: 0;
+        width: 100%;
+        background: #333333;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
+            background-color 0.3s;
+    }
+    .show .nav-links {
+        height: 100%;
+        background-color: #000000;
+    }
+    .nav-links a {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        margin-right: 50px;
+        margin-left: 50px;
+        transition: opacity 1.5s, height 2s;
+    }
+    .show .nav-links a {
+        opacity: 1;
+        width: auto;
+        height: auto;
+    }
+    .nav-icon {
+        order: 1;
+        display: grid;
+    }
+    .logo {
+        order: 2;
+    }
+    .search-icon {
+        order: 3;
+    }
+}
+   
+nav button {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: Roboto Mono, monospace;    
+    text-align: center;
+    cursor: pointer;
+    gap: 16px;
+}
 
-    
+nav button:hover {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: Roboto Mono, monospace;    
+    height: 22pt;
+    max-width: 140pt;
+}
+
+nav button:active {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: Roboto Mono, monospace;    
+    height: 22pt;
+    max-width: 140pt;
+}    
 .masthead {
     background-color: #ffffff;
     margin: 0px;
@@ -911,67 +1044,6 @@ a:any-link {
     background-color: inherit;
 }
 
-nav button {
-    background-color: #ffffff;
-    display: inline-flex;
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    cursor: pointer;
-    font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-    margin: 0;
-}
-
-nav button:hover {
-    background-color: #ffffff;
-    display: inline-flex;
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    cursor: pointer;
-    font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-    font-weight: bolder ;
-        margin: 0;
-
-}
-
-nav button:active {
-    background-color: #ffffff;
-    display: inline-flex;
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    cursor: pointer;
-    font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-    font-weight: bolder ;
-        margin: 0;
-
-}
-
 .filterPosts {
     background-color: #ffffff;
     display: inline-flex;
@@ -981,14 +1053,9 @@ nav button:active {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-     margin: 8px;
+    font-family: Roboto Mono, monospace;   
+    height: 22pt;
+    margin: 0;
 }
 
 .filterPosts:hover {
@@ -1000,16 +1067,9 @@ nav button:active {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-    font-weight: bolder ;
-     margin: 8px;
-
+    font-family: Roboto Mono, monospace;   
+    font-weight: bolder;
+    height: 22pt;
 }
 
 .filterPosts:active {
@@ -1022,35 +1082,24 @@ nav button:active {
     cursor: pointer;
     font-size: 10pt;
     font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-    font-weight: bolder ;
-     margin: 8px;
-
+    height: 22pt;
+    font-weight: bolder;
 }
 
 button {
-    background-color: #ffffff;
-    display: inline-flex;
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    cursor: pointer;
-    font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-     margin: 8px;
-}
+            background-color: #ffffff;
+            display: inline-flex;
+            flex: 1 1 auto;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            cursor: pointer;
+            font-size: 10pt;
+            font-family: Roboto Mono, monospace;
+            height: 22pt;
+            max-width: 140pt;
+        
+        }
 
 button:hover {
     background-color: #ffffff;
@@ -1061,16 +1110,10 @@ button:hover {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
     font-weight: bolder ;
-     margin: 8px;
-
+    font-family: Roboto Mono, monospace;    
+    height: 22pt;
+    max-width: 140pt;
 }
 
 button:active {
@@ -1082,16 +1125,10 @@ button:active {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
     font-weight: bolder ;
-     margin: 8px;
-
+    font-family: Roboto Mono, monospace;    
+    height: 22pt;
+    max-width: 140pt;
 }
     
 .tile {
@@ -1198,7 +1235,96 @@ button:active {
 main {
     display: inline;
     flex-grow: 1;
-    margin: 8px;
+    padding: 8px;
+}
+   .show {
+        background-color: #000000;
+    }
+    .nav-links {
+        position: fixed;
+        top: 44px;
+        right: 0;
+        height: 0;
+        width: 100%;
+        background: #333333;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
+            background-color 0.3s;
+    }
+    .show .nav-links {
+        height: 100%;
+        background-color: #000000;
+    }
+    .nav-links a {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        margin-right: 50px;
+        margin-left: 50px;
+        transition: opacity 1.5s, height 2s;
+    }
+    .show .nav-links a {
+        opacity: 1;
+        width: auto;
+        height: auto;
+    }
+    .nav-icon {
+        order: 1;
+        display: grid;
+    }
+    .logo {
+        order: 2;
+    }
+    .search-icon {
+        order: 3;
+    }
+}
+   
+nav button {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: Roboto Mono, monospace;    
+    text-align: center;
+    cursor: pointer;
+    gap: 16px;
+}
+
+nav button:hover {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: Roboto Mono, monospace;    
+    height: 22pt;
+    max-width: 140pt;
+}
+
+nav button:active {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: Roboto Mono, monospace;    
+    height: 22pt;
+    max-width: 140pt;
 }
 
 .masthead {
@@ -1270,110 +1396,40 @@ a:any-link {
     background-color: inherit;
 }
 
-nav button {
-    background-color: #ffffff;
-    display: inline-flex;
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    cursor: pointer;
-    font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-    margin: 0;
-}
-
-nav button:hover {
-    background-color: #ffffff;
-    display: inline-flex;
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    cursor: pointer;
-    font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-    font-weight: bolder ;
-        margin: 0;
-
-}
-
-nav button:active {
-    background-color: #ffffff;
-    display: inline-flex;
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    cursor: pointer;
-    font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-    font-weight: bolder ;
-        margin: 0;
-
-}
-
 .filterPosts {
     background-color: #ffffff;
-    display: inline-flex;
+    display: flex;
     flex: 1 1 auto;
     align-items: center;
     justify-content: center;
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-     margin: 8px;
+    font-family: Roboto Mono, monospace;   
+    height: 22pt;
+    margin: 0;
+    max-width: 100;
 }
 
 .filterPosts:hover {
     background-color: #ffffff;
-    display: inline-flex;
+    display: flex;
     flex: 1 1 auto;
     align-items: center;
     justify-content: center;
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-    font-weight: bolder ;
-     margin: 8px;
-
+    font-family: Roboto Mono, monospace;   
+    font-weight: bolder;
+    height: 22pt;
+    margin: 0;
+    max-width: 100;
 }
 
 .filterPosts:active {
     background-color: #ffffff;
-    display: inline-flex;
+    display: flex;
     flex: 1 1 auto;
     align-items: center;
     justify-content: center;
@@ -1381,55 +1437,40 @@ nav button:active {
     cursor: pointer;
     font-size: 10pt;
     font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-    font-weight: bolder ;
-     margin: 8px;
-
+    height: 22pt;
+    font-weight: bolder;
+        margin: 0;
+    max-width: 100;
 }
 
 button {
-    background-color: #ffffff;
-    display: inline-flex;
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    cursor: pointer;
-    font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-     margin: 8px;
-}
+            background-color: #ffffff;
+            display: flex;
+            flex: 1 1 auto;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            cursor: pointer;
+            font-size: 10pt;
+            font-family: Roboto Mono, monospace;
+            height: 22pt;
+            max-width: 140pt;
+        
+        }
 
 button:hover {
     background-color: #ffffff;
-    display: inline-flex;
+    display: flex;
     flex: 1 1 auto;
     align-items: center;
     justify-content: center;
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
     font-weight: bolder ;
-     margin: 8px;
-
+    font-family: Roboto Mono, monospace;    
+    height: 22pt;
+    max-width: 140pt;
 }
 
 button:active {
@@ -1441,16 +1482,10 @@ button:active {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
     font-weight: bolder ;
-     margin: 8px;
-
+    font-family: Roboto Mono, monospace;    
+    height: 22pt;
+    max-width: 140pt;
 }
     
 .tile {
@@ -1561,8 +1596,95 @@ main {
     max-width: 100%;
 
 }
-    
+   .show {
+        background-color: #000000;
+    }
+    .nav-links {
+        position: fixed;
+        top: 44px;
+        right: 0;
+        height: 0;
+        width: 100%;
+        background: #333333;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
+            background-color 0.3s;
+    }
+    .show .nav-links {
+        height: 100%;
+        background-color: #000000;
+    }
+    .nav-links a {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        margin-right: 50px;
+        margin-left: 50px;
+        transition: opacity 1.5s, height 2s;
+    }
+    .show .nav-links a {
+        opacity: 1;
+        width: auto;
+        height: auto;
+    }
+    .nav-icon {
+        order: 1;
+        display: grid;
+    }
+    .logo {
+        order: 2;
+    }
+    .search-icon {
+        order: 3;
+    }
+}
+   
+nav button {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: Roboto Mono, monospace;    
+    text-align: center;
+    cursor: pointer;
+    gap: 16px;
+}
 
+nav button:hover {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: Roboto Mono, monospace;    
+    height: 22pt;
+    max-width: 140pt;
+}
+
+nav button:active {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: Roboto Mono, monospace;    
+    height: 22pt;
+    max-width: 140pt;
+}
 .masthead {
     background-color: #ffffff;
     margin: 0px;
@@ -1649,67 +1771,6 @@ a:any-link {
     background-color: inherit;
 }
 
-nav button {
-    background-color: #ffffff;
-    display: inline-flex;
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    cursor: pointer;
-    font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-    margin: 0;
-}
-
-nav button:hover {
-    background-color: #ffffff;
-    display: inline-flex;
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    cursor: pointer;
-    font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-    font-weight: bolder ;
-        margin: 0;
-
-}
-
-nav button:active {
-    background-color: #ffffff;
-    display: inline-flex;
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    cursor: pointer;
-    font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-    font-weight: bolder ;
-        margin: 0;
-
-}
-
 .filterPosts {
     background-color: #ffffff;
     display: inline-flex;
@@ -1726,7 +1787,7 @@ nav button:active {
     border-color: #1e1e1e;
     border: 2;
     border-radius: 16px;
-     margin: 8px;
+    margin: 0;
 }
 
 .filterPosts:hover {
@@ -1746,7 +1807,7 @@ nav button:active {
     border: 2;
     border-radius: 16px;
     font-weight: bolder ;
-     margin: 8px;
+        margin: 0;
 
 }
 
@@ -1767,7 +1828,7 @@ nav button:active {
     border: 2;
     border-radius: 16px;
     font-weight: bolder ;
-     margin: 8px;
+        margin: 0;
 
 }
 
@@ -1787,7 +1848,7 @@ button {
     border-color: #1e1e1e;
     border: 2;
     border-radius: 16px;
-     margin: 8px;
+    margin: 0;
 }
 
 button:hover {
@@ -1807,7 +1868,7 @@ button:hover {
     border: 2;
     border-radius: 16px;
     font-weight: bolder ;
-     margin: 8px;
+        margin: 0;
 
 }
 
@@ -1828,7 +1889,7 @@ button:active {
     border: 2;
     border-radius: 16px;
     font-weight: bolder ;
-     margin: 8px;
+        margin: 0;
 
 }
 
