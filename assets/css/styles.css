@@ -891,50 +891,7 @@ main {
     flex-grow: 1;
     padding: 8px;
 }
-   .show {
-        background-color: #000000;
-    }
-    .nav-links {
-        position: relative;
-        right: 0;
-        height: 0;
-        width: 100%;
-        background: #333333;
-        flex-direction: column;
-        justify-content: flex-start;
-        transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
-            background-color 0.3s;
-    }
-    .show .nav-links {
-        height: 100%;
-        background-color: #000000;
-    }
-    .nav-links a {
-        height: 0;
-        width: 0;
-        opacity: 0;
-        overflow: hidden;
-        margin-right: 50px;
-        margin-left: 50px;
-        transition: opacity 1.5s, height 2s;
-    }
-    .show .nav-links a {
-        opacity: 1;
-        width: auto;
-        height: auto;
-    }
-    .nav-icon {
-        order: 1;
-        display: grid;
-    }
-    .logo {
-        order: 2;
-    }
-    .search-icon {
-        order: 3;
-    }
-}
-   
+
 nav button {
     background-color: #ffffff;
     display: inline-flex;
@@ -978,7 +935,71 @@ nav button:active {
     font-family: Roboto Mono, monospace;    
     height: 22pt;
     max-width: 140pt;
-}    
+}  
+
+.nav-icon {
+    display: none;
+    grid-gap: 5px;
+    grid-template-columns: auto;
+    padding: 17px 0;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.bar {
+    height: 1px;
+    width: 18px;
+    background: white;
+    transition: 0.5s;
+}
+.show .one {
+    transform: rotate(45deg) translateY(5.5px);
+}
+.show .two {
+    transform: rotate(-45deg) translateY(-5.5px);
+}
+
+    .show {
+        background-color: #000000;
+    }
+    .nav-links {
+        position: fixed;
+        top: 44px;
+        right: 0;
+        height: 0;
+        width: 100%;
+        background: #333333;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
+            background-color 0.3s;
+    }
+    .show .nav-links {
+        height: 100%;
+        background-color: #000000;
+    }
+    .nav-links a {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        margin-right: 50px;
+        margin-left: 50px;
+        transition: opacity 1.5s, height 2s;
+    }
+    .show .nav-links a {
+        opacity: 1;
+        width: auto;
+        height: auto;
+    }
+    .nav-icon {
+        order: 2;
+        display: grid;
+    }
+    .logo {
+        order: 1;
+    }
+}  
 .masthead {
     background-color: #ffffff;
     margin: 0px;
@@ -1238,50 +1259,6 @@ main {
     flex-grow: 1;
     padding: 8px;
 }
-   .show {
-        background-color: #000000;
-    }
-    .nav-links {
-        position: fixed;
-        top: 44px;
-        right: 0;
-        height: 0;
-        width: 100%;
-        background: #333333;
-        flex-direction: column;
-        justify-content: flex-start;
-        transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
-            background-color 0.3s;
-    }
-    .show .nav-links {
-        height: 100%;
-        background-color: #000000;
-    }
-    .nav-links a {
-        height: 0;
-        width: 0;
-        opacity: 0;
-        overflow: hidden;
-        margin-right: 50px;
-        margin-left: 50px;
-        transition: opacity 1.5s, height 2s;
-    }
-    .show .nav-links a {
-        opacity: 1;
-        width: auto;
-        height: auto;
-    }
-    .nav-icon {
-        order: 1;
-        display: grid;
-    }
-    .logo {
-        order: 2;
-    }
-    .search-icon {
-        order: 3;
-    }
-}
    
 nav button {
     background-color: #ffffff;
@@ -1327,6 +1304,70 @@ nav button:active {
     height: 22pt;
     max-width: 140pt;
 }
+
+.nav-icon {
+    display: none;
+    grid-gap: 5px;
+    grid-template-columns: auto;
+    padding: 17px 0;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.bar {
+    height: 1px;
+    width: 18px;
+    background: white;
+    transition: 0.5s;
+}
+.show .one {
+    transform: rotate(45deg) translateY(5.5px);
+}
+.show .two {
+    transform: rotate(-45deg) translateY(-5.5px);
+}
+
+    .show {
+        background-color: #000000;
+    }
+    .nav-links {
+        position: fixed;
+        top: 44px;
+        right: 0;
+        height: 0;
+        width: 100%;
+        background: #333333;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
+            background-color 0.3s;
+    }
+    .show .nav-links {
+        height: 100%;
+        background-color: #000000;
+    }
+    .nav-links a {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        margin-right: 50px;
+        margin-left: 50px;
+        transition: opacity 1.5s, height 2s;
+    }
+    .show .nav-links a {
+        opacity: 1;
+        width: auto;
+        height: auto;
+    }
+    .nav-icon {
+        order: 2;
+        display: grid;
+    }
+    .logo {
+        order: 1;
+    }
+} 
 
 .masthead {
     background-color: #ffffff;
@@ -1594,50 +1635,6 @@ main {
     max-width: 100%;
 
 }
-   .show {
-        background-color: #000000;
-    }
-    .nav-links {
-        position: fixed;
-        top: 44px;
-        right: 0;
-        height: 0;
-        width: 100%;
-        background: #333333;
-        flex-direction: column;
-        justify-content: flex-start;
-        transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
-            background-color 0.3s;
-    }
-    .show .nav-links {
-        height: 100%;
-        background-color: #000000;
-    }
-    .nav-links a {
-        height: 0;
-        width: 0;
-        opacity: 0;
-        overflow: hidden;
-        margin-right: 50px;
-        margin-left: 50px;
-        transition: opacity 1.5s, height 2s;
-    }
-    .show .nav-links a {
-        opacity: 1;
-        width: auto;
-        height: auto;
-    }
-    .nav-icon {
-        order: 1;
-        display: grid;
-    }
-    .logo {
-        order: 2;
-    }
-    .search-icon {
-        order: 3;
-    }
-}
    
 nav button {
         background-color: #ffffff;
@@ -1684,6 +1681,71 @@ nav button:active {
     height: 22pt;
     max-width: 140pt;
 }
+
+.nav-icon {
+    display: none;
+    grid-gap: 5px;
+    grid-template-columns: auto;
+    padding: 17px 0;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.bar {
+    height: 1px;
+    width: 18px;
+    background: white;
+    transition: 0.5s;
+}
+.show .one {
+    transform: rotate(45deg) translateY(5.5px);
+}
+.show .two {
+    transform: rotate(-45deg) translateY(-5.5px);
+}
+
+    .show {
+        background-color: #000000;
+    }
+    .nav-links {
+        position: fixed;
+        top: 44px;
+        right: 0;
+        height: 0;
+        width: 100%;
+        background: #333333;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
+            background-color 0.3s;
+    }
+    .show .nav-links {
+        height: 100%;
+        background-color: #000000;
+    }
+    .nav-links a {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        margin-right: 50px;
+        margin-left: 50px;
+        transition: opacity 1.5s, height 2s;
+    }
+    .show .nav-links a {
+        opacity: 1;
+        width: auto;
+        height: auto;
+    }
+    .nav-icon {
+        order: 2;
+        display: grid;
+    }
+    .logo {
+        order: 1;
+    }
+} 
+
 .masthead {
     background-color: #ffffff;
     margin: 0px;
