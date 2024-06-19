@@ -32,9 +32,9 @@
         
         <!-- naviagtion links -->
         <div class="nav-links">
-            <a href="#">RÉSUMÉ</a>
-            <a href="#">WRITINGS</a>
-            <button id="copyEmailBtn">EMAIL ME</button>
+            <a href="/About">RÉSUMÉ</a>
+            <a href="/writings">WRITINGS</a>
+            <a><button id="copyEmailBtn">EMAIL ME</button></a>
         </div>
     </div>
 </nav>
@@ -484,20 +484,21 @@
         </div>
     </section>
 </main>
-<button style="padding: 8px !important; margin: 8px !important; id="myBtn" title="Back to Top" style="display: block;">Back to Top</button>
+<button id="myBtn" title="Back to Top" style="padding: 8px; margin: 8px; display: none;">Back to Top</button>
 
 <!-- FOOTER -->
-    <footer><div class="footer">
+<footer>
+    <div class="footer">
         <pre>&copy; 2016-2024 Daniel Austin, LLC. All rights reserved.</pre>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
+        <a href="/sitemap">Privacy Policy</a>
+        <a href="/termsofuse">Terms of Use</a>
     </div>
-    </footer>
+</footer>
 
-    <!-- Hidden input to hold the email address -->
-    <input type="text" value="me@imdanielaustin.com" id="emailAddress" style="position: absolute; left: -9999px;">
+<!-- Hidden input to hold the email address -->
+<input type="text" value="me@imdanielaustin.com" id="emailAddress" style="position: absolute; left: -9999px;">
 
- <script>
+<script>
     document.addEventListener("DOMContentLoaded", function() {
         // Back to Top button
         const backToTopButton = document.getElementById("myBtn");
@@ -561,7 +562,3 @@
     });
 </script>
 <script src="scripts.js"></script>
-
-
-</body>
-</html>
