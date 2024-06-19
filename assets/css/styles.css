@@ -67,7 +67,7 @@ body {
     height: auto;
     max-width: 100%;
     overflow-x: hidden;
-        margin: 0;
+    margin: 0;
 }
 
 h1 , h2 {
@@ -79,8 +79,7 @@ h1 , h2 {
 }
 
 pre , p {
-    font-family: Roboto Mono, monospace;    
-    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     display: block;
     max-width: 100%;
     text-wrap: auto;
     font-size: 12pt;
@@ -221,8 +220,7 @@ nav button:active {
     justify-content: center;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;
-    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
     cursor: pointer;
     gap: 16px;
     border-color: #1e1e1e;
@@ -240,8 +238,7 @@ nav button:active {
     justify-content: center;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
     cursor: pointer;
     gap: 16px;
     border-color: #1e1e1e;
@@ -260,8 +257,7 @@ nav button:active {
     justify-content: center;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
     cursor: pointer;
     gap: 16px;
     border-color: #1e1e1e;
@@ -637,8 +633,7 @@ h1 , h2 {
 }
 
 pre , p {
-    font-family: Roboto Mono, monospace;    
-    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     display: block;
     padding: auto;
     max-width: 100%;
     text-wrap: auto;
@@ -657,8 +652,7 @@ nav button {
     display: inline;
     flex: 1 1 auto;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
     cursor: pointer;
     border-color: #1e1e1e;
     border: 2px;
@@ -672,8 +666,7 @@ nav button:hover {
     display: inline;
     flex: 1 1 auto;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
     cursor: pointer;
     gap: 16px;
     border-color: #1e1e1e;
@@ -692,8 +685,7 @@ nav button:active {
     justify-content: center;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
     cursor: pointer;
     gap: 16px;
     border-color: #1e1e1e;
@@ -770,8 +762,7 @@ nav button:active {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;   
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
 }
 
 .filterPosts:hover {
@@ -783,8 +774,7 @@ nav button:active {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;   
-    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     font-weight: bolder;
     height: 22pt;
 }
 
@@ -797,8 +787,7 @@ nav button:active {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     font-weight: bolder;
 }
 
@@ -811,8 +800,7 @@ button {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     max-width: 140pt;
 }
 
@@ -826,8 +814,7 @@ button:hover {
     cursor: pointer;
     font-size: 10pt;
     font-weight: bolder ;
-    font-family: Roboto Mono, monospace;    
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     max-width: 140pt;
 }
 
@@ -841,8 +828,7 @@ button:active {
     cursor: pointer;
     font-size: 10pt;
     font-weight: bolder ;
-    font-family: Roboto Mono, monospace;    
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     max-width: 140pt;
 }
 
@@ -965,8 +951,7 @@ nav button {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
     cursor: pointer;
     gap: 16px;
 }
@@ -981,8 +966,7 @@ nav button:hover {
     cursor: pointer;
     font-size: 10pt;
     font-weight: bolder ;
-    font-family: Roboto Mono, monospace;    
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     max-width: 140pt;
 }
 
@@ -996,8 +980,7 @@ nav button:active {
     cursor: pointer;
     font-size: 10pt;
     font-weight: bolder ;
-    font-family: Roboto Mono, monospace;    
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     max-width: 140pt;
 }  
 
@@ -1114,8 +1097,7 @@ h1 , h2 {
 }
 
 pre , p {
-    font-family: Roboto Mono, monospace;    
-    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     display: block;
     padding: auto;
     max-width: 100%;
     text-wrap: auto;
@@ -1142,8 +1124,7 @@ a:any-link {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;   
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     margin: 0;
 }
 
@@ -1156,8 +1137,7 @@ a:any-link {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;   
-    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     font-weight: bolder;
     height: 22pt;
 }
 
@@ -1170,8 +1150,7 @@ a:any-link {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     font-weight: bolder;
 }
 
@@ -1184,8 +1163,7 @@ button {
             padding: 16px;
             cursor: pointer;
             font-size: 10pt;
-            font-family: Roboto Mono, monospace;
-            height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             height: 22pt;
             max-width: 140pt;
         
         }
@@ -1200,8 +1178,7 @@ button:hover {
     cursor: pointer;
     font-size: 10pt;
     font-weight: bolder ;
-    font-family: Roboto Mono, monospace;    
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     max-width: 140pt;
 }
 
@@ -1215,8 +1192,7 @@ button:active {
     cursor: pointer;
     font-size: 10pt;
     font-weight: bolder ;
-    font-family: Roboto Mono, monospace;    
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     max-width: 140pt;
 }
     
@@ -1336,8 +1312,7 @@ nav button {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
     cursor: pointer;
     gap: 16px;
 }
@@ -1352,8 +1327,7 @@ nav button:hover {
     cursor: pointer;
     font-size: 10pt;
     font-weight: bolder ;
-    font-family: Roboto Mono, monospace;    
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     max-width: 140pt;
 }
 
@@ -1367,8 +1341,7 @@ nav button:active {
     cursor: pointer;
     font-size: 10pt;
     font-weight: bolder ;
-    font-family: Roboto Mono, monospace;    
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     max-width: 140pt;
 }  
 
@@ -1464,8 +1437,7 @@ header {
 }
 
 body {
-                font-family: Roboto Mono, monospace;
-                margin: auto;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;                 margin: auto;
                 display: flex;
                 flex-direction: column;
                 height: auto;
@@ -1484,8 +1456,7 @@ h1 , h2 {
 }
 
 pre , p {
-    font-family: Roboto Mono, monospace;    
-    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     display: block;
     padding: auto;
     max-width: 100%;
     text-wrap: auto;
@@ -1512,8 +1483,7 @@ a:any-link {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;   
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     margin: 0;
     max-width: 100;
 }
@@ -1527,8 +1497,7 @@ a:any-link {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;   
-    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     font-weight: bolder;
     height: 22pt;
     margin: 0;
     max-width: 100;
@@ -1543,8 +1512,7 @@ a:any-link {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     font-weight: bolder;
         margin: 0;
     max-width: 100;
@@ -1559,8 +1527,7 @@ button {
             padding: 16px;
             cursor: pointer;
             font-size: 10pt;
-            font-family: Roboto Mono, monospace;
-            height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             height: 22pt;
             max-width: 140pt;
         
         }
@@ -1575,8 +1542,7 @@ button:hover {
     cursor: pointer;
     font-size: 10pt;
     font-weight: bolder ;
-    font-family: Roboto Mono, monospace;    
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     max-width: 140pt;
 }
 
@@ -1590,8 +1556,7 @@ button:active {
     cursor: pointer;
     font-size: 10pt;
     font-weight: bolder ;
-    font-family: Roboto Mono, monospace;    
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     max-width: 140pt;
 }
     
@@ -1711,8 +1676,7 @@ nav button {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
     cursor: pointer;
     gap: 16px;
 }
@@ -1727,8 +1691,7 @@ nav button:hover {
     cursor: pointer;
     font-size: 10pt;
     font-weight: bolder ;
-    font-family: Roboto Mono, monospace;    
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     max-width: 140pt;
 }
 
@@ -1742,8 +1705,7 @@ nav button:active {
     cursor: pointer;
     font-size: 10pt;
     font-weight: bolder ;
-    font-family: Roboto Mono, monospace;    
-    height: 22pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     max-width: 140pt;
 }  
 
@@ -1813,7 +1775,7 @@ nav button:active {
 .masthead {
     background-color: #ffffff;
     margin: 0px;
-    padding: 120px;
+    padding: auto;
     display: flex;
     justify-content: center; /* Horizontally center */
     align-items: center; /* Vertically center */
@@ -1832,7 +1794,7 @@ nav button:active {
 .tagline h2, .tagline p, .tagline pre {
     color: #1e1e1e;
     display: inline-block;
-    font-size: 12pt;
+    font-size: 10pt;
     text-align: center; /* Center text within the container */
     text-wrap: wrap ;
 }
@@ -1840,7 +1802,7 @@ nav button:active {
 .tagline h2, .tagline p, .tagline pre {
     color: #1e1e1e;
     display: inline-block;
-    font-size: 12pt;
+    font-size: 10pt;
     text-align: center; /* Center text within the container */
     text-wrap: wrap ;
 }
@@ -1857,8 +1819,7 @@ nav button:active {
 }
 
 body {
-    font-family: Roboto Mono, monospace;    
-    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     margin: 0;
     padding: 8px;
     display: inline-flex;
     flex-direction: column;
@@ -1878,8 +1839,7 @@ h1 , h2 {
 }
 
 pre , p {
-    font-family: Roboto Mono, monospace;    
-    display: inline-flex;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     display: inline-flex;
     padding: auto;
     max-width: 100%;
     text-wrap: auto;
@@ -1905,8 +1865,7 @@ a:any-link {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
     cursor: pointer;
     gap: 16px;
     border-color: #1e1e1e;
@@ -1924,8 +1883,7 @@ a:any-link {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
     cursor: pointer;
     gap: 16px;
     border-color: #1e1e1e;
@@ -1945,8 +1903,7 @@ a:any-link {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
     cursor: pointer;
     gap: 16px;
     border-color: #1e1e1e;
@@ -1966,8 +1923,7 @@ button {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
     cursor: pointer;
     gap: 16px;
     border-color: #1e1e1e;
@@ -1985,8 +1941,7 @@ button:hover {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
     cursor: pointer;
     gap: 16px;
     border-color: #1e1e1e;
@@ -2006,8 +1961,7 @@ button:active {
     padding: 16px;
     cursor: pointer;
     font-size: 10pt;
-    font-family: Roboto Mono, monospace;    
-    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
     cursor: pointer;
     gap: 16px;
     border-color: #1e1e1e;
