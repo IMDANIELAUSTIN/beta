@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <title>DANIEL AUSTIN</title>
     <link rel="icon" type="image/x-icon" href="/Website Assets/Favicon/Favicon.ico">
@@ -13,32 +14,44 @@
 </head>
 <body>
     <header>
-        <div>
+<nav>
+    <div class="nav-content">
+    
+        <!-- logo -->
             <a href="/index" class="logo">
                 <span class="symbol">
                     <img src="/images/ASTNDSGN Logomark Short Animation Alpha Loop Once.gif" alt="" width="30" height="30" style="display: block;">
                 </span>
             </a>
+        
+        <!-- navigation -->
+        <div class="nav-icon">
+            <div class="bar one"></div>
+            <div class="bar two"></div>
         </div>
-        <nav>
-            <button id="copyEmailBtn">EMAIL ME</button>
-            <a href="https://beta.imdanielaustin.com/About"><button>RÉSUMÉ</button></a>
-            <a href="https://beta.imdanielaustin.com/writings"><button>WRITINGS</button></a>
-        </nav>
+        
+        <!-- naviagtion links -->
+        <div class="nav-links">
+            <a href="/About">RÉSUMÉ</a>
+            <a href="/writings">WRITINGS</a>
+            <a><button id="copyEmailBtn">EMAIL ME</button></a>
+        </div>
+    </div>
+</nav>
     </header>
-  <main>
+        <!-- masthead -->
+<main>
 
 <!-- Various Content Sections -->
 <h1>Daniel Austin</h1>
 <pre>Los Angeles Metro Area, CA | <a href="tel:6268382231" target="_blank"><span class="label">(626) 838-2231</span></a>
-</a>
   </pre>
 
-<h1>ABOUT</h1>    
+<h2>ABOUT</h2>    
   <pre>As a designer with formal education in design and expertise in typography, I bring a unique blend of creativity and precision to product teams. My retail experience has fostered a deep appreciation for product solutions and customer satisfaction. By empathizing with consumer needs, I strive to create design solutions that empower and enhance communities.</pre>
 <br>
       
-<h1>EXPERIENCE</h1>       
+<h2>EXPERIENCE</h2>       
 <h3>The Bitcoin Layer, 2024 — Content Manager and Design Intern<br></h3>
   <pre>As the Content Manager and Designer Intern at The Bitcoin Layer, I have the unique opportunity to immerse myself in the Bitcoin startup culture and work closely with the founder and creative director. My role involve creating engaging Bitcoin-related content, including tweets with custom graphics and short animations for social media. Through this internship, I will exercise my skills in social media management, and graphic design, while deepening my understanding of Bitcoin and its online ecosystem.</pre>
 <br>            
@@ -49,7 +62,7 @@
   <pre>As 2020 seemed to be the year of historical events, a new academic endeavore at ArtCenter College of Design allowed my cohorts and I to collaborate with local partners to support and empower Black and minority-owned companies and brands throughout Los Angeles. The course was structured like a design consultancy, with students fulfilling creative roles and providing design services and deliverables – including brand and product strategy, brand identity, product design and environmental design services.</pre>
 <br>  
       
-<h1>EDUCATION</h1>    
+<h2>EDUCATION</h2>    
   <pre>Arlington High School, 2016 — High School Diploma <br>
 California College of the Arts, 2017 — Interaction Design (Product Track)<br>
 ArtCenter College of Design, 2020 — Graphic Design (Brand/Print Design Track)<br>
@@ -61,22 +74,24 @@ ArtCenter College of Design, 2020 — Graphic Design (Brand/Print Design Track)<
 </div>
 </div>
 </main>
-<button id="myBtn" title="Back to Top" style="display: block;">Back to Top</button>
+<button id="myBtn" title="Back to Top" style="padding: 8px; margin: 8px; display: none;">Back to Top</button>
 
 <!-- FOOTER -->
-    <footer><div class="footer">
+<footer>
+    <div class="footer">
         <pre>&copy; 2016-2024 Daniel Austin, LLC. All rights reserved.</pre>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
+        <a href="/sitemap">Privacy Policy</a>
+        <a href="/termsofuse">Terms of Use</a>
     </div>
-    </footer>
+</footer>
 
-    <!-- Hidden input to hold the email address -->
-    <input type="text" value="me@imdanielaustin.com" id="emailAddress" style="position: absolute; left: -9999px;">
+<!-- Hidden input to hold the email address -->
+<input type="text" value="me@imdanielaustin.com" id="emailAddress" style="position: absolute; left: -9999px;">
 
- <script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
         // Back to Top button
-        var backToTopButton = document.getElementById("myBtn");
+        const backToTopButton = document.getElementById("myBtn");
 
         // Show the button when scrolling down 20px
         window.onscroll = function() {
@@ -94,18 +109,46 @@ ArtCenter College of Design, 2020 — Graphic Design (Brand/Print Design Track)<
         };
 
         // Copy email to clipboard
-        document.getElementById('copyEmailBtn').addEventListener('click', function() {
-            var copyText = document.getElementById("emailAddress");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999); // For mobile devices
-            document.execCommand("copy");
+        const copyEmailBtn = document.getElementById('copyEmailBtn');
+        const emailAddress = document.getElementById("emailAddress");
 
-            // Alert the copied text (optional)
-            alert("Copied the email: " + copyText.value);
-        });
-    </script>
- <script src="scripts.js">
+        if (copyEmailBtn && emailAddress) {
+            copyEmailBtn.addEventListener('click', function() {
+                emailAddress.select();
+                emailAddress.setSelectionRange(0, 99999); // For mobile devices
+                document.execCommand("copy");
 
+                // Alert the copied text (optional)
+                alert("Copied the email: " + emailAddress.value);
+            });
+        }
 
-</body>
-</html>
+        // Nav
+        const navIcon = document.querySelector(".nav-icon");
+        const nav = document.querySelector("nav");
+
+        if (navIcon && nav) {
+            navIcon.onclick = function () {
+                nav.classList.toggle('show');
+            };
+        }
+
+        // Filter Posts
+        function filterPosts(tag) {
+            const posts = document.querySelectorAll('.blog-post');
+
+            posts.forEach(post => {
+                const tags = post.getAttribute('data-tags').split(', ');
+
+                if (tag === 'all' || tags.includes(tag)) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        }
+
+        window.filterPosts = filterPosts; // Expose the function to global scope if needed
+    });
+</script>
+<script src="scripts.js"></script>
