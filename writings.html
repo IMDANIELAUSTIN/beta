@@ -14,27 +14,32 @@
 </head>
 <body>
     <header>
-        <div>
+<nav>
+    <div class="nav-content">
+    
+        <!-- logo -->
             <a href="/index" class="logo">
                 <span class="symbol">
                     <img src="/images/ASTNDSGN Logomark Short Animation Alpha Loop Once.gif" alt="" width="30" height="30" style="display: block;">
                 </span>
             </a>
+        
+        <!-- navigation -->
+        <div class="nav-icon">
+            <div class="bar one"></div>
+            <div class="bar two"></div>
         </div>
-        <nav style="margin: 8px">
-            <button id="copyEmailBtn">EMAIL ME</button>
-            <a href="/About"><button>RÉSUMÉ</button></a>
-            <a href="/writings"><button>WRITINGS</button></a>
-        </nav>
-        <nav style="margin: 8px">
-        <section class="filterPosts">
-        <button onclick="filterPosts('all')">ALL</button>
-        <button onclick="filterPosts('design')">DESIGN</button>
-        <button onclick="filterPosts('fintech')">FINTECH</button>
-        <button onclick="filterPosts('op-ed')">OP-ED</button>
-        </section class="filterPosts">
-        </nav>
+        
+        <!-- naviagtion links -->
+        <div class="nav-links">
+            <a href="/About">RÉSUMÉ</a>
+            <a href="/writings">WRITINGS</a>
+            <a><button id="copyEmailBtn">EMAIL ME</button></a>
+        </div>
+    </div>
+</nav>
     </header>
+        <!-- masthead -->
 <main>
         <section class="tiles">
             <div class="tile tile-1">
@@ -48,22 +53,24 @@
             </div>
         </section>
     </main>
-<button id="myBtn" title="Back to Top" style="display: block;">Back to Top</button>
+<button id="myBtn" title="Back to Top" style="padding: 8px; margin: 8px; display: none;">Back to Top</button>
 
 <!-- FOOTER -->
-    <footer><div class="footer">
+<footer>
+    <div class="footer">
         <pre>&copy; 2016-2024 Daniel Austin, LLC. All rights reserved.</pre>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
+        <a href="/sitemap">Privacy Policy</a>
+        <a href="/termsofuse">Terms of Use</a>
     </div>
-    </footer>
+</footer>
 
-    <!-- Hidden input to hold the email address -->
-    <input type="text" value="me@imdanielaustin.com" id="emailAddress" style="position: absolute; left: -9999px;">
+<!-- Hidden input to hold the email address -->
+<input type="text" value="me@imdanielaustin.com" id="emailAddress" style="position: absolute; left: -9999px;">
 
- <script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
         // Back to Top button
-        var backToTopButton = document.getElementById("myBtn");
+        const backToTopButton = document.getElementById("myBtn");
 
         // Show the button when scrolling down 20px
         window.onscroll = function() {
@@ -81,33 +88,46 @@
         };
 
         // Copy email to clipboard
-        document.getElementById('copyEmailBtn').addEventListener('click', function() {
-            var copyText = document.getElementById("emailAddress");
-            copyText.select();
-            copyText.setSelectionRange(0, 99999); // For mobile devices
-            document.execCommand("copy");
+        const copyEmailBtn = document.getElementById('copyEmailBtn');
+        const emailAddress = document.getElementById("emailAddress");
 
-            // Alert the copied text (optional)
-            alert("Copied the email: " + copyText.value);
-        });
+        if (copyEmailBtn && emailAddress) {
+            copyEmailBtn.addEventListener('click', function() {
+                emailAddress.select();
+                emailAddress.setSelectionRange(0, 99999); // For mobile devices
+                document.execCommand("copy");
 
-                // Filter Posts
-function filterPosts(tag) {
-  var posts = document.querySelectorAll('.blog-post');
+                // Alert the copied text (optional)
+                alert("Copied the email: " + emailAddress.value);
+            });
+        }
 
-  posts.forEach(function(post) {
-    var tags = post.getAttribute('data-tags').split(', ');
+        // Nav
+        const navIcon = document.querySelector(".nav-icon");
+        const nav = document.querySelector("nav");
 
-    if (tag === 'all' || tags.includes(tag)) {
-      post.style.display = 'block';
-    } else {
-      post.style.display = 'none';
-    }
-  });
-}
+        if (navIcon && nav) {
+            navIcon.onclick = function () {
+                nav.classList.toggle('show');
+            };
+        }
+
+        // Filter Posts
+        function filterPosts(tag) {
+            const posts = document.querySelectorAll('.blog-post');
+
+            posts.forEach(post => {
+                const tags = post.getAttribute('data-tags').split(', ');
+
+                if (tag === 'all' || tags.includes(tag)) {
+                    post.style.display = 'block';
+                } else {
+                    post.style.display = 'none';
+                }
+            });
+        }
+
+        window.filterPosts = filterPosts; // Expose the function to global scope if needed
+    });
 </script>
- <script src="scripts.js">
-
-
-</body>
-</html>
+<script src="scripts.js"></script>
