@@ -7,7 +7,7 @@ main {
 .masthead {
     background-color: #ffffff;
     margin: 0px;
-    padding: 120px;
+    padding: 16px auto;
     display: flex;
     justify-content: center; /* Horizontally center */
     align-items: center; /* Vertically center */
@@ -194,7 +194,7 @@ nav button:active {
     display: none;
     grid-gap: 5px;
     grid-template-columns: auto;
-    padding: 17px 0;
+    padding: 16px 0;
     height: 10px;
     cursor: pointer;
     transition: all 0.3s;
@@ -206,10 +206,10 @@ nav button:active {
     transition: 0.5s;
 }
 .show .one {
-    transform: rotate(45deg) translateY(5.5px);
+    transform: rotate(45deg) translateY(6px);
 }
 .show .two {
-    transform: rotate(-45deg) translateY(-5.5px);
+    transform: rotate(-45deg) translateY(-6px);
 }
 
 .filterPosts {
@@ -735,7 +735,7 @@ nav button:active {
     display: none;
     grid-gap: 5px;
     grid-template-columns: auto;
-    padding: 17px 0;
+    padding: 16px 0;
     height: 10px;
     cursor: pointer;
     transition: all 0.3s;
@@ -747,10 +747,10 @@ nav button:active {
     transition: 0.5s;
 }
 .show .one {
-    transform: rotate(45deg) translateY(5.5px);
+    transform: rotate(45deg) translateY(6px);
 }
 .show .two {
-    transform: rotate(-45deg) translateY(-5.5px);
+    transform: rotate(-45deg) translateY(-6px);
 }
 
 .filterPosts {
@@ -988,7 +988,7 @@ nav button:active {
     display: none;
     grid-gap: 5px;
     grid-template-columns: auto;
-    padding: 17px 0;
+    padding: 16px 0;
     height: 10px;
     cursor: pointer;
     transition: all 0.3s;
@@ -1000,10 +1000,10 @@ nav button:active {
     transition: 0.5s;
 }
 .show .one {
-    transform: rotate(45deg) translateY(5.5px);
+    transform: rotate(45deg) translateY(6px);
 }
 .show .two {
-    transform: rotate(-45deg) translateY(-5.5px);
+    transform: rotate(-45deg) translateY(-6px);
 }
 
     .show {
@@ -1202,8 +1202,8 @@ button:active {
     align-items: center;
     justify-content: center;
     aspect-ratio: 1/1;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     flex: 1;
     border-top: 2pt solid;
 }
@@ -1361,10 +1361,10 @@ nav button:active {
     transition: 0.5s;
 }
 .show .one {
-    transform: rotate(45deg) translateY(5.5px);
+    transform: rotate(45deg) translateY(6px);
 }
 .show .two {
-    transform: rotate(-45deg) translateY(-5.5px);
+    transform: rotate(-45deg) translateY(-6px);
 }
 
     .show {
@@ -1713,7 +1713,7 @@ nav button:active {
     display: none;
     grid-gap: 5px;
     grid-template-columns: auto;
-    padding: 17px 0;
+    padding: 16px 0;
     height: 10px;
     cursor: pointer;
     transition: all 0.3s;
@@ -1725,24 +1725,23 @@ nav button:active {
     transition: 0.5s;
 }
 .show .one {
-    transform: rotate(45deg) translateY(5.5px);
+    transform: rotate(45deg) translateY(6px);
 }
 .show .two {
-    transform: rotate(-45deg) translateY(-5.5px);
+    transform: rotate(-45deg) translateY(-6px);
 }
 
     .show {
         background-color: #ffffff;
     }
     .nav-links {
-        position: fixed;
         top: 54px;
         right: 0;
         height: 0;
         width: 100%;
         background: #ffffff;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: space-evenly;
         transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
             background-color 0.3s;
     }
