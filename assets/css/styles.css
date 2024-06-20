@@ -317,9 +317,18 @@ button:active {
 
 }
 
+.tile-title {
+    margin-top: 16px !important;
+    top: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .tile {
     background-color: inherit;
     display: inline-block;
+    position: static;
     align-items: center;
     justify-content: center;
     aspect-ratio: 1/1;
