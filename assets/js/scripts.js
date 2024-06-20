@@ -212,3 +212,38 @@ window.addEventListener('click', (event) => {
         lightbox.style.display = 'none';
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const tiles = document.querySelectorAll(".tile");
+    const modalContent = document.querySelector(".modal__content");
+
+    tiles.forEach(tile => {
+        tile.querySelector('.open-modal').addEventListener('click', function() {
+            const title = tile.getAttribute('data-title');
+            const description = tile.getAttribute('data-description');
+            const images = tile.getAttribute('data-images').split(',');
+
+            // Clear previous content
+            modalContent.innerHTML = '';
+
+            // Add new content
+            const titleElement = document.createElement('h1');
+            titleElement.textContent = title;
+            modalContent.appendChild(titleElement);
+
+            const descriptionElement = document.createElement('p');
+            descriptionElement.textContent = description;
+            modalContent.appendChild(descriptionElement);
+
+            const galleryElement = document.createElement('div');
+            galleryElement.classList.add('gallery');
+            images.forEach(src => {
+                const imgElement = document.createElement('img');
+                imgElement.src = src;
+                imgElement.classList.add('gallery-item');
+                galleryElement.appendChild(imgElement);
+            });
+            modalContent.appendChild(galleryElement);
+        });
+    });
+});
