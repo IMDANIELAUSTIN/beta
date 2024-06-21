@@ -70,15 +70,16 @@ body {
     margin: 0;
 }
 
-h1 , h2 {
+h1 {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
     display: block;
     max-width: 100%;
     text-wrap: auto;
     font-size: 20pt;
+    line-height: 1.2;
 }
 
-pre , p {
+h2, h3 , pre , p {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     display: block;
     max-width: 100%;
     text-wrap: auto;
