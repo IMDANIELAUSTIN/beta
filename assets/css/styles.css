@@ -438,7 +438,8 @@ button:active {
 }
 
 .modal__footer {
-  text-align: right;
+  text-align: center;
+    margin: 16px;
   a {
     color: #1e1e1e;
   }
