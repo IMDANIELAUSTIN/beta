@@ -403,6 +403,2105 @@ button:active {
 }
 
 .modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none; /* Initially hidden */
+  align-items: center;
+  justify-content: center;
+  background: #1e1e1e;
+  transition: all .4s;
+  overflow-y: auto;
+}
+
+.modal:target {
+  display: flex; /* Change to flex when targetted */
+}
+
+.modal__content {
+  border-radius: 16px;
+  max-width: 50%;
+  min-width: 360px;
+  max-height: 80%;
+  background: #ffffff;
+  padding: 16px;
+  margin: 16px;
+  overflow-y: auto;
+  
+  /* Position is now applied using parent element, which simplifies styles */
+  margin: auto;
+}
+
+/* Added a class for better organization */
+.modal__footer {
+  text-align: center;
+  margin: 16px;
+}
+
+a, i {
+  color: #1e1e1e;
+}
+
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #1e1e1e;
+  text-decoration: none;
+}
+
+/* Improved scrollbar styles by using variables and a more modular approach */
+.modal-container {
+  --scrollbar-width: 8px;
+  --scrollbar-track-color: #333;
+  --scrollbar-thumb-color: rgba(51, 51, 51, 0.8);
+  
+  ::-webkit-scrollbar {
+    width: var(--scrollbar-width);
+  }
+  
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px var(--scrollbar-track-color);
+    border-radius: 8px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-color);
+    opacity: 0.6;
+    border-radius: 10px;
+  }
+  
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(51, 51, 51, 1);
+  }
+}
+
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    overflow-y: auto;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+    object-fit: cover;
+}
+
+.gallery-item:hover {
+    opacity: 0.7;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.photo img {
+width: 100%;
+height: 100%;
+border-radius: 16px;
+object-fit: cover;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.caption {
+    margin: auto;
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.next {
+    right: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.footer {
+            position: static ;
+            text-align: center;
+            padding: 8px;
+            background-color: #ffffff;
+            font-size: 12px;
+        }
+
+.footer a {
+            color: #1e1e1e;
+            position: static ;
+            display: inline-block;
+            text-align: center;
+            padding: 8px;
+            font-size: 12px;
+        }
+
+.footer a:hover {
+            text-decoration: underline;
+        }
+
+@media (max-width: 1024px) {
+main {
+    display: inline;
+    flex-grow: 1;
+    padding: 8px;
+}
+
+.masthead {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 64px 0px;
+    text-align: center ;
+    flex-wrap: wrap ;
+    line-break: ;
+}
+
+.tagline {
+    text-align: center ;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: inherit;
+
+}
+
+body {
+    font-family: Roboto Mono, monospace;    
+    margin: 0;
+    padding: 8px;
+    display: inline-flex;
+    flex-direction: column;
+    height: auto;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1 , h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    display: block;
+    padding: auto;
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 20pt;
+}
+
+pre , p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     display: block;
+    padding: auto;
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 12pt;
+}
+
+a:any-link {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+    color: #1e1e1e;
+    text-decoration-line: none;
+    cursor: auto;
+}
+
+nav button {
+    background-color: #ffffff;
+    display: inline;
+    flex: 1 1 auto;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
+    cursor: pointer;
+    border-color: #1e1e1e;
+    border: 2px;
+    border-radius: 16px;
+    border-color: #1e1e1e;
+    margin: 0;
+}
+
+nav button:hover {
+    background-color: #ffffff;
+    display: inline;
+    flex: 1 1 auto;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
+    cursor: pointer;
+    gap: 16px;
+    border-color: #1e1e1e;
+    border: 2;
+    border-radius: 16px;
+    font-weight: bolder ;
+    margin: 0;
+
+}
+
+nav button:active {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
+    cursor: pointer;
+    gap: 16px;
+    border-color: #1e1e1e;
+    border: 2;
+    border-radius: 16px;
+    font-weight: bolder ;
+        margin: 0;
+
+}
+
+.nav-content {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12pt;
+    line-height: 44px;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #1e1e1e;
+}
+.nav-content a {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12pt;
+    line-height: 44px;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #1e1e1e;
+}
+.nav-content a:hover,
+.nav-icon:hover,
+.search-icon:hover {
+    opacity: 0.7;
+}
+.nav-links {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-icon {
+    display: none;
+    grid-gap: 5px;
+    grid-template-columns: auto;
+    padding: 16px 0;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.bar {
+    height: 4px;
+    width: 16px;
+    background: #1e1e1e;
+    transition: 0.5s;
+}
+.show .one {
+    transform: rotate(45deg) translateY(6px);
+}
+.show .two {
+    transform: rotate(-45deg) translateY(-6px);
+}
+
+.filterPosts {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+}
+
+.filterPosts:hover {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     font-weight: bolder;
+    height: 22pt;
+}
+
+.filterPosts:active {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    font-weight: bolder;
+}
+
+button {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    max-width: 140pt;
+}
+
+button:hover {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    max-width: 140pt;
+}
+
+button:active {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    max-width: 140pt;
+}
+
+.tile {
+    background-color: inherit;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    flex: 1;
+    border-top: 2pt solid;
+}
+
+.tile img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.tile .text {
+    position: absolute ;
+    top: 16px;
+    left: 0px;
+    font-size: 12pt;
+}
+
+.tiles-1 {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.tiles-1 .text {
+    position: absolute ;
+    top: 16px;
+    left: 0px;
+    font-size: 12pt;
+}
+
+.tiles {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    flex: 1;
+    gap: 16px;
+
+
+}
+
+.tiles img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+
+.tiles .text {
+    position: absolute;
+    top: 104px;
+    left: auto;
+    font-size: 12pt;
+    align-items: left;
+    inline-size: 'start';
+}
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  padding: auto;
+  align-items: center;
+  justify-content: center;
+  background: #1e1e1e;
+  transition: all .4s;
+  overflow-y: auto;
+}
+.footer {
+            position: static ;
+            display: block ;
+            text-align: center;
+            padding: 8px;
+            background-color: #ffffff;
+            font-size: 12px;
+        }
+
+.footer a {
+            color: #1e1e1e;
+            position: static ;
+            display: block;
+            text-align: center;
+            padding: 8px;
+            font-size: 12px;
+        }
+
+.footer a:hover {
+            text-decoration: underline;
+        }
+
+@media (max-width: 768px) {
+main {
+    display: inline;
+    flex-grow: 1;
+    padding: 8px;
+}
+
+nav button {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
+    cursor: pointer;
+    gap: 16px;
+}
+
+nav button:hover {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    max-width: 140pt;
+}
+
+nav button:active {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    max-width: 140pt;
+}  
+
+.nav-icon {
+    display: none;
+    grid-gap: 5px;
+    grid-template-columns: auto;
+    padding: 16px 0;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.bar {
+    height: 4px;
+    width: 16px;
+    background: #1e1e1e;
+    transition: 0.5s;
+}
+.show .one {
+    transform: rotate(45deg) translateY(6px);
+}
+.show .two {
+    transform: rotate(-45deg) translateY(-6px);
+}
+
+    .show {
+        background-color: #ffffff;
+    }
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        height: 0;
+        width: 100%;
+        background: inherit;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
+            background-color 0.3s;
+    }
+    .show .nav-links {
+        height: 100%;
+        background-color: inherit;
+    }
+    .nav-links a {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        margin-right: 50px;
+        margin-left: 50px;
+        transition: opacity 1.5s, height 2s;
+    }
+    .show .nav-links a {
+        opacity: 1;
+        width: auto;
+        height: auto;
+    }
+    .nav-icon {
+        order: 2;
+        display: grid;
+    }
+    .logo {
+        order: 1;
+    }
+}     
+.masthead {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 64px 0px;
+    text-align: center ;
+    flex-wrap: wrap ;
+}
+
+.tagline {
+    text-align: center ;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: inherit;
+
+}
+
+body {
+    font-family: Roboto Mono, monospace;    
+    margin: 0;
+    padding: 8px;
+    display: inline-flex;
+    flex-direction: column;
+    height: auto;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+h1 , h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    display: block;
+    padding: auto;
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 20pt;
+}
+
+pre , p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     display: block;
+    padding: auto;
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 12pt;
+}
+
+a:any-link {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+    color: #1e1e1e;
+    text-decoration-line: none;
+    cursor: auto;
+}
+
+.logo {
+    background-color: inherit;
+}
+
+.filterPosts {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    margin: 0;
+}
+
+.filterPosts:hover {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     font-weight: bolder;
+    height: 22pt;
+}
+
+.filterPosts:active {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    font-weight: bolder;
+}
+
+button {
+            background-color: #ffffff;
+            display: inline-flex;
+            flex: 1 1 auto;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            cursor: pointer;
+            font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             height: 22pt;
+            max-width: 140pt;
+        
+        }
+
+button:hover {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    max-width: 140pt;
+}
+
+button:active {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    max-width: 140pt;
+}
+    
+.tile {
+    background-color: inherit;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    flex: 1;
+    border-top: 2pt solid;
+}
+
+.tile img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.tile .text {
+    position: absolute ;
+    top: 16px;
+    left: 0px;
+    font-size: 12pt;
+}
+
+.tiles-1 {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.tiles-1 .text {
+    position: absolute;
+    top: 104px;
+    left: auto;
+    font-size: 12pt;
+    align-items: left;
+    inline-size: 'start';
+}
+.tiles {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    flex: 1;
+    gap: 16px;
+
+
+}
+
+.tiles img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.tiles .text {
+    position: absolute;
+    top: 104px;
+    left: auto;
+    font-size: 12pt;
+    align-items: left;
+    inline-size: 'start';
+}
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  padding: auto;
+  align-items: center;
+  justify-content: center;
+  background: #1e1e1e;
+  transition: all .4s;
+  overflow-y: auto;
+}
+.footer {
+            position: static ;
+            text-align: center;
+            padding: 8px;
+            background-color: #ffffff;
+            font-size: 12px;
+        }
+
+.footer a {
+            color: #1e1e1e;
+            position: sticky ;
+            display: block;
+            text-align: center;
+            padding: 8px;
+            font-size: 12px;
+        }
+
+.footer a:hover {
+            text-decoration: underline;
+        }
+@media (max-width: 480px) {
+main {
+    display: inline;
+    flex-grow: 1;
+    padding: 8px;
+}
+
+nav button {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
+    cursor: pointer;
+    gap: 16px;
+}
+
+nav button:hover {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    max-width: 140pt;
+}
+
+nav button:active {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    max-width: 140pt;
+}  
+
+.nav-icon {
+    display: none;
+    grid-gap: 5px;
+    grid-template-columns: auto;
+    padding: 16px 0;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.bar {
+    height: 4px;
+    width: 16px;
+    background: #1e1e1e;
+    transition: 0.5s;
+}
+.show .one {
+    transform: rotate(45deg) translateY(6px);
+}
+.show .two {
+    transform: rotate(-45deg) translateY(-6px);
+}
+
+    .show {
+        background-color: #ffffff;
+    }
+    .nav-links {
+        top: 54px;
+        right: 0;
+        height: 0;
+        width: 100%;
+        background: #ffffff;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
+            background-color 0.3s;
+    }
+    .show .nav-links {
+        height: 100%;
+        background-color: inherit;
+    }
+    .nav-links a {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        margin-right: 50px;
+        margin-left: 50px;
+        transition: opacity 1.5s, height 2s;
+    }
+    .show .nav-links a {
+        opacity: 1;
+        width: auto;
+        height: auto;
+    }
+    .nav-icon {
+        order: 2;
+        display: grid;
+    }
+    .logo {
+        order: 1;
+    }
+}     
+.masthead {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 64px 0px;
+    text-align: center ;
+    flex-wrap: wrap ;
+}
+
+.tagline {
+    text-align: center ;
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: inherit;
+
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;                 margin: auto;
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                max-width: 100%;
+                overflow-x: hidden;
+            
+            }
+
+h1 , h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    display: block;
+    padding: auto;
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 20pt;
+}
+
+pre , p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     display: block;
+    padding: auto;
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 12pt;
+}
+
+a:any-link {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+    color: #1e1e1e;
+    text-decoration-line: none;
+    cursor: auto;
+}
+
+.logo {
+    background-color: inherit;
+}
+
+.filterPosts {
+    background-color: #ffffff;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    margin: 0;
+    max-width: 100;
+}
+
+.filterPosts:hover {
+    background-color: #ffffff;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     font-weight: bolder;
+    height: 22pt;
+    margin: 0;
+    max-width: 100;
+}
+
+.filterPosts:active {
+    background-color: #ffffff;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    font-weight: bolder;
+        margin: 0;
+    max-width: 100;
+}
+
+button {
+            background-color: #ffffff;
+            display: flex;
+            flex: 1 1 auto;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            cursor: pointer;
+            font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             height: 22pt;
+            max-width: 140pt;
+        
+        }
+
+button:hover {
+    background-color: #ffffff;
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    max-width: 140pt;
+}
+
+button:active {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    max-width: 140pt;
+}
+    
+.tile {
+    background-color: inherit;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    flex: 1;
+    border-top: 2pt solid;
+}
+
+.tile img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.tile .text {
+    position: absolute ;
+    top: 16px;
+    left: 0px;
+    font-size: 12pt;
+}
+
+.tiles-1 {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.tiles-1 .text {
+    position: absolute;
+    top: 104px;
+    left: auto;
+    font-size: 12pt;
+    align-items: left;
+    inline-size: 'start';
+}
+.tiles {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    flex: 1;
+    gap: 16px;
+
+
+}
+
+.tiles img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.tiles .text {
+    position: absolute;
+    top: 104px;
+    left: auto;
+    font-size: 12pt;
+    align-items: left;
+    inline-size: 'start';
+}
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  padding: auto;
+  align-items: center;
+  justify-content: center;
+  background: #1e1e1e;
+  transition: all .4s;
+  overflow-y: auto;
+}
+.footer {
+            position: static ;
+            text-align: center;
+            padding: 8px;
+            background-color: #ffffff;
+            font-size: 12px;
+        }
+
+.footer a {
+            color: #1e1e1e;
+            position: sticky ;
+            display: block;
+            text-align: center;
+            padding: 8px;
+            font-size: 12px;
+        }
+
+.footer a:hover {
+            text-decoration: underline;
+        }    
+@media (max-width: 320px) {
+main {
+    display: inline;
+    flex-grow: 1;
+    padding: 8px;
+}
+
+nav button {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
+    cursor: pointer;
+    gap: 16px;
+}
+
+nav button:hover {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    max-width: 140pt;
+}
+
+nav button:active {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    max-width: 140pt;
+}  
+
+.nav-icon {
+    display: none;
+    grid-gap: 5px;
+    grid-template-columns: auto;
+    padding: 16px 0;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.bar {
+    height: 4px;
+    width: 16px;
+    background: #1e1e1e;
+    transition: 0.5s;
+}
+.show .one {
+    transform: rotate(45deg) translateY(6px);
+}
+.show .two {
+    transform: rotate(-45deg) translateY(-6px);
+}
+
+    .show {
+        background-color: #ffffff;
+    }
+    .nav-links {
+        top: 54px;
+        right: 0;
+        height: 0;
+        width: 100%;
+        background: #ffffff;
+        flex-direction: column;
+        justify-content: space-evenly;
+        transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
+            background-color 0.3s;
+    }
+    .show .nav-links {
+        height: 100%;
+        background-color: inherit;
+    }
+    .nav-links a {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        margin-right: 50px;
+        margin-left: 50px;
+        transition: opacity 1.5s, height 2s;
+    }
+    .show .nav-links a {
+        opacity: 1;
+        width: auto;
+        height: auto;
+    }
+    .nav-icon {
+        order: 2;
+        display: grid;
+    }
+    .logo {
+        order: 1;
+    }
+}     
+.masthead {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: auto;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    max-width: 100%; /* Full viewport height */
+    flex-wrap: wrap;
+}
+
+.tagline {
+    color: #1e1e1e;
+    display: inline-block;
+    font-size: 20pt;
+    text-align: center; /* Center text within the container */
+    text-wrap: wrap ;
+}
+
+.tagline h2, .tagline p, .tagline pre {
+    color: #1e1e1e;
+    display: inline-block;
+    font-size: 10pt;
+    text-align: center; /* Center text within the container */
+    text-wrap: wrap ;
+}
+
+.tagline h2, .tagline p, .tagline pre {
+    color: #1e1e1e;
+    display: inline-block;
+    font-size: 10pt;
+    text-align: center; /* Center text within the container */
+    text-wrap: wrap ;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; /* Center text within the container */
+    text-wrap: wrap ;
+    margin: 0;
+    max-width: 100%;
+
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     margin: 0;
+    padding: 8px;
+    display: inline-flex;
+    flex-direction: column;
+    height: auto;
+    max-width: 100%;
+    overflow-x: hidden;
+    max-width: 100%;
+}  
+    
+h1 , h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    display: inline-flex;
+    padding: auto;
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 10pt;
+}
+
+pre , p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     display: inline-flex;
+    padding: auto;
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 10pt;
+}
+
+a:any-link {
+    color: #1e1e1e;
+    text-decoration-line: none;
+    cursor: auto;
+}
+
+.logo {
+    background-color: inherit;
+}
+
+.filterPosts {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
+    cursor: pointer;
+    gap: 16px;
+    border-color: #1e1e1e;
+    border: 2;
+    border-radius: 16px;
+    margin: 0;
+}
+
+.filterPosts:hover {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
+    cursor: pointer;
+    gap: 16px;
+    border-color: #1e1e1e;
+    border: 2;
+    border-radius: 16px;
+    font-weight: bolder ;
+    margin: 0;
+
+}
+
+.filterPosts:active {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
+    cursor: pointer;
+    gap: 16px;
+    border-color: #1e1e1e;
+    border: 2;
+    border-radius: 16px;
+    font-weight: bolder ;
+    margin: 0;
+
+}
+
+button {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
+    cursor: pointer;
+    gap: 16px;
+    border-color: #1e1e1e;
+    border: 2;
+    border-radius: 16px;
+    margin: 0;
+}
+
+button:hover {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
+    cursor: pointer;
+    gap: 16px;
+    border-color: #1e1e1e;
+    border: 2;
+    border-radius: 16px;
+    font-weight: bolder ;
+        margin: 0;
+
+}
+
+button:active {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
+    cursor: pointer;
+    gap: 16px;
+    border-color: #1e1e1e;
+    border: 2;
+    border-radius: 16px;
+    font-weight: bolder ;
+    margin: 0;
+}
+
+.tile {
+    background-color: inherit;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    flex: 1;
+    border-top: 2pt solid;
+        margin: 0;
+    max-width: 100;
+}
+
+.tile img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.tile .text {
+    position: absolute ;
+    top: 16px;
+    left: 0px;
+    font-size: 10pt;
+}
+.tiles-1 {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+.tiles-1 .text {
+    position: absolute;
+    top: 104px;
+    left: auto;
+    font-size: 10pt;
+    align-items: left;
+    inline-size: 'start';
+}
+.tiles {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    flex: 1;
+    gap: 16px;
+    margin: 0;
+    max-width: 100;
+}
+
+.tiles img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.tiles .text {
+    position: absolute;
+    top: 104px;
+    left: auto;
+    font-size: 10pt;
+    align-items: left;
+    inline-size: 'start';
+}
+.modal {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  padding: auto;
+  align-items: center;
+  justify-content: center;
+  background: #1e1e1e;
+  transition: all .4s;
+  overflow-y: auto;
+}
+.footer {
+            position: static ;
+                font-size: 10pt;
+                padding: 8px;
+    max-width: 100;
+            }
+
+.footer a {
+                position: static ;
+                margin: 0 5px;
+    max-width: 100;
+            }
+main {
+    display: block;
+    flex-grow: 1;
+    margin: 8px;
+}
+
+.masthead {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 16px auto;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    max-width: 100%; /* Full viewport height */
+    flex-wrap: wrap;
+}
+
+.tagline {
+    color: #1e1e1e;
+    display: inline-block;
+    font-size: 20pt;
+    text-align: center; /* Center text within the container */
+    text-wrap: wrap ;
+}
+
+.tagline h2, .tagline p, .tagline pre {
+    color: #1e1e1e;
+    display: inline-block;
+    font-size: 12pt;
+    text-align: center; /* Center text within the container */
+    text-wrap: wrap ;
+}
+
+.tagline h2, .tagline p, .tagline pre {
+    color: #1e1e1e;
+    display: inline-block;
+    font-size: 12pt;
+    text-align: center; /* Center text within the container */
+    text-wrap: wrap ;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center; /* Center text within the container */
+    text-wrap: wrap ;
+    margin: 0;
+
+}
+
+header {
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: inherit;
+
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    margin: 0;
+    padding: 8px;
+    display: inline-flex;
+    flex-direction: column;
+    height: auto;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    display: block;
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 20pt;
+    line-height: 1.2;
+}
+
+h2, h3 , pre , p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     display: block;
+    max-width: 100%;
+    text-wrap: auto;
+    font-size: 12pt;
+    line-height: 1.2;
+}
+
+pre span , p span {
+    display: block;
+}
+
+a:any-link {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+    color: #1e1e1e;
+    text-decoration-line: none;
+    cursor: auto;
+}
+
+.logo {
+    background-color: inherit;
+}
+
+nav button {
+    background-color: #ffffff;
+    display: inline;
+    flex: 1 1 auto;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    text-align: center;
+    cursor: pointer;
+    border-color: #1e1e1e;
+    border: 2px;
+    border-radius: 16px;
+    border-color: #1e1e1e;
+    margin: 0;
+}
+
+nav button:hover {
+    background-color: #ffffff;
+    display: inline;
+    flex: 1 1 auto;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    text-align: center;
+    cursor: pointer;
+    gap: 16px;
+    border-color: #1e1e1e;
+    border: 2;
+    border-radius: 16px;
+    font-weight: bolder ;
+    margin: 0;
+
+}
+
+nav button:active {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    text-align: center;
+    cursor: pointer;
+    gap: 16px;
+    border-color: #1e1e1e;
+    border: 2;
+    border-radius: 16px;
+    font-weight: bolder ;
+        margin: 0;
+
+}
+
+.nav-content {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    font-size: 12pt;
+    line-height: 44px;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #1e1e1e;
+}
+.nav-content a {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    font-size: 12pt;
+    line-height: 44px;
+    text-decoration: none;
+    transition: all 0.3s;
+    color: #1e1e1e;
+}
+.nav-content a:hover,
+.nav-icon:hover,
+.search-icon:hover {
+    opacity: 0.7;
+}
+.nav-links {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.nav-icon {
+    display: none;
+    grid-gap: 5px;
+    grid-template-columns: auto;
+    padding: 16px 0;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.bar {
+    height: 4px;
+    width: 16px;
+    background: #1e1e1e;
+    transition: 0.5s;
+}
+.show .one {
+    transform: rotate(45deg) translateY(6px);
+}
+.show .two {
+    transform: rotate(-45deg) translateY(-6px);
+}
+
+.filterPosts {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
+    cursor: pointer;
+    gap: 16px;
+    border-color: #1e1e1e;
+    border: 2;
+    border-radius: 16px;
+    margin: 0;
+
+}
+
+.filterPosts:hover {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
+    cursor: pointer;
+    gap: 16px;
+    border-color: #1e1e1e;
+    border: 2;
+    border-radius: 16px;
+    font-weight: bolder ;
+        margin: 0;
+
+}
+
+.filterPosts:active {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
+    cursor: pointer;
+    gap: 16px;
+    border-color: #1e1e1e;
+    border: 2;
+    border-radius: 16px;
+    font-weight: bolder ;
+        margin: 0;
+
+}
+
+button {
+    background-color: #ffffff;
+    display: inline;
+    flex: 1 1 auto;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    text-align: center;
+    cursor: pointer;
+    gap: 16px;
+    border-color: #1e1e1e;
+    border: 2;
+    border-radius: 16px;
+    margin: 0;
+}
+
+button:hover {
+    background-color: #ffffff;
+    display: inline;
+    flex: 1 1 auto;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    text-align: center;
+    cursor: pointer;
+    gap: 16px;
+    border-color: #1e1e1e;
+    border: 2;
+    border-radius: 16px;
+    font-weight: bolder ;
+    margin: 0;
+
+}
+
+button:active {
+    background-color: #ffffff;
+    display: inline;
+    flex: 1 1 auto;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;    
+    text-align: center;
+    cursor: pointer;
+    gap: 16px;
+    border-color: #1e1e1e;
+    border: 2;
+    border-radius: 16px;
+    font-weight: bolder ;
+    margin: 0;
+
+}
+
+.tile-title {
+    margin-top: 16px !important;
+    top: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tile {
+    background-color: inherit;
+    display: inline-block;
+    position: static;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    flex: 1;
+    border-top: 2pt solid;
+}
+
+.tile img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.tile .text {
+    position: absolute;
+    top: 16px;
+    left: 0px;
+    font-size: 12pt;
+}
+
+.tile h1 , h2 , pre  {
+    margin: 0px;
+    padding: 0px;
+    top: 104px;
+    left: 24px;
+    font-size: 12pt;
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    flex: 1;
+    gap: 16px;
+}
+
+.tiles img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.tiles .text {
+    position: absolute;
+    top: 104px;
+    left: auto;
+    font-size: 12pt;
+    align-items: left;
+    inline-size: 'start';
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-linear-gradient(to right, #834d9b, #d04ed6);
+  background: linear-gradient(to right, #834d9b, #d04ed6);
+}
+
+.wrapper a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 16px;
+  background-color: #fff;
+  text-transform: uppercase;
+  color: #1e1e1e;
+  font-family: Roboto Mono, monospace;    
+}
+
+.modal {
   visibility: hidden;
   opacity: 0;
   position: fixed;
@@ -453,6 +2552,25 @@ button:active {
   right: 16px;
   color: #1e1e1e;
   text-decoration: none;
+}
+
+.modal .modal__content .modal__content-scroll::-webkit-scrollbar {
+    width: 10px;
+}
+
+.modal-container .modal__content .modal__content-scroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px #333; 
+    border-radius: 10px;
+}
+    
+.modal .modal__content .modal__content-scroll::-webkit-scrollbar-thumb {
+    background: rgba(51,51,51,0.8);
+    opacity: 0.6;
+    border-radius: 10px;
+}
+
+.modal .modal__content .modal-container-content-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(51,51,51,1);
 }
 
 .gallery {
