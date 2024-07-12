@@ -318,6 +318,12 @@ button:active {
 
 }
 
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .tile-title {
     margin-top: 16px !important;
     top: 50px !important;
@@ -337,6 +343,10 @@ button:active {
     grid-template-rows: repeat(3, 1fr);
     flex: 1;
     border-top: 2pt solid;
+}
+
+.tile:hover {
+  transform: scale(1.05);
 }
 
 .tile img {
@@ -867,16 +877,35 @@ button:active {
     max-width: 140pt;
 }
 
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tile-title {
+    margin-top: 16px !important;
+    top: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .tile {
     background-color: inherit;
     display: inline-block;
+    position: static;
     align-items: center;
     justify-content: center;
     aspect-ratio: 1/1;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     flex: 1;
     border-top: 2pt solid;
+}
+
+.tile:hover {
+  transform: scale(1.05);
 }
 
 .tile img {
@@ -1231,16 +1260,35 @@ button:active {
     max-width: 140pt;
 }
     
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tile-title {
+    margin-top: 16px !important;
+    top: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .tile {
     background-color: inherit;
     display: inline-block;
+    position: static;
     align-items: center;
     justify-content: center;
     aspect-ratio: 1/1;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     flex: 1;
     border-top: 2pt solid;
+}
+
+.tile:hover {
+  transform: scale(1.05);
 }
 
 .tile img {
@@ -1594,17 +1642,35 @@ button:active {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     max-width: 140pt;
 }
-    
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tile-title {
+    margin-top: 16px !important;
+    top: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .tile {
     background-color: inherit;
     display: inline-block;
+    position: static;
     align-items: center;
     justify-content: center;
     aspect-ratio: 1/1;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     flex: 1;
     border-top: 2pt solid;
+}
+
+.tile:hover {
+  transform: scale(1.05);
 }
 
 .tile img {
@@ -2005,18 +2071,35 @@ button:active {
     margin: 0;
 }
 
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tile-title {
+    margin-top: 16px !important;
+    top: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .tile {
     background-color: inherit;
     display: inline-block;
+    position: static;
     align-items: center;
     justify-content: center;
     aspect-ratio: 1/1;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     flex: 1;
     border-top: 2pt solid;
-        margin: 0;
-    max-width: 100;
+}
+
+.tile:hover {
+  transform: scale(1.05);
 }
 
 .tile img {
@@ -2417,6 +2500,12 @@ button:active {
 
 }
 
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
 .tile-title {
     margin-top: 16px !important;
     top: 50px !important;
@@ -2436,6 +2525,10 @@ button:active {
     grid-template-rows: repeat(3, 1fr);
     flex: 1;
     border-top: 2pt solid;
+}
+
+.tile:hover {
+  transform: scale(1.05);
 }
 
 .tile img {
@@ -2961,16 +3054,35 @@ button:active {
     max-width: 140pt;
 }
 
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tile-title {
+    margin-top: 16px !important;
+    top: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .tile {
     background-color: inherit;
     display: inline-block;
+    position: static;
     align-items: center;
     justify-content: center;
     aspect-ratio: 1/1;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     flex: 1;
     border-top: 2pt solid;
+}
+
+.tile:hover {
+  transform: scale(1.05);
 }
 
 .tile img {
@@ -3325,16 +3437,35 @@ button:active {
     max-width: 140pt;
 }
     
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tile-title {
+    margin-top: 16px !important;
+    top: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .tile {
     background-color: inherit;
     display: inline-block;
+    position: static;
     align-items: center;
     justify-content: center;
     aspect-ratio: 1/1;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     flex: 1;
     border-top: 2pt solid;
+}
+
+.tile:hover {
+  transform: scale(1.05);
 }
 
 .tile img {
@@ -3689,16 +3820,35 @@ button:active {
     max-width: 140pt;
 }
     
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tile-title {
+    margin-top: 16px !important;
+    top: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .tile {
     background-color: inherit;
     display: inline-block;
+    position: static;
     align-items: center;
     justify-content: center;
     aspect-ratio: 1/1;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     flex: 1;
     border-top: 2pt solid;
+}
+
+.tile:hover {
+  transform: scale(1.05);
 }
 
 .tile img {
@@ -4099,18 +4249,35 @@ button:active {
     margin: 0;
 }
 
+.tile-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tile-title {
+    margin-top: 16px !important;
+    top: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .tile {
     background-color: inherit;
     display: inline-block;
+    position: static;
     align-items: center;
     justify-content: center;
     aspect-ratio: 1/1;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     flex: 1;
     border-top: 2pt solid;
-        margin: 0;
-    max-width: 100;
+}
+
+.tile:hover {
+  transform: scale(1.05);
 }
 
 .tile img {
