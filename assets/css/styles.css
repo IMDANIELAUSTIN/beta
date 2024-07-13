@@ -321,7 +321,7 @@ button:active {
 .tile-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 8px;
 }
 
 .tile-title {
@@ -4250,9 +4250,18 @@ button:active {
 }
 
 .tile-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+background-color: inherit;
+    display: inline-block;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    flex: 1;
+    border-top: 2pt solid;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
 .tile-title {
@@ -4266,7 +4275,7 @@ button:active {
 .tile {
     background-color: inherit;
     display: inline-block;
-    position: static;
+    position: relative;
     align-items: center;
     justify-content: center;
     aspect-ratio: 1/1;
@@ -4274,7 +4283,8 @@ button:active {
     grid-template-rows: repeat(3, 1fr);
     flex: 1;
     border-top: 2pt solid;
-}
+  overflow: hidden;
+  transition: transform 0.3s ease;}
 
 .tile:hover {
   transform: scale(1.05);
