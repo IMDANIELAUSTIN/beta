@@ -342,14 +342,12 @@ button:active {
     align-items: center;
     justify-content: center;
     aspect-ratio: 1/1;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
     flex: 1;
     border-top: 2pt solid;
 }
 
 .tile:hover {
-  transform: scale(1.05);
+  transform: scale(1.016);
 }
 
 .tile img {
@@ -371,29 +369,6 @@ button:active {
     top: 104px;
     left: 24px;
     font-size: 12pt;
-}
-
-.tiles {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    flex: 1;
-    gap: 16px;
-}
-
-.tiles img {
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 1/1;
-    object-fit: contain;
-}
-.tiles .text {
-    position: absolute;
-    top: 104px;
-    left: auto;
-    font-size: 12pt;
-    align-items: left;
-    inline-size: 'start';
 }
 
 .wrapper {
@@ -4307,44 +4282,7 @@ background-color: inherit;
     left: 0px;
     font-size: 10pt;
 }
-.tiles-1 {
-    flex: 1;
-    max-width: 100%;
-    height: auto;
-}
-.tiles-1 .text {
-    position: absolute;
-    top: 104px;
-    left: auto;
-    font-size: 10pt;
-    align-items: left;
-    inline-size: 'start';
-}
-.tiles {
-
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    flex: 1;
-    gap: 16px;
-    margin: 0;
-    max-width: 100;
-}
-
-.tiles img {
-    max-width: 100%;
-    height: auto;
-    aspect-ratio: 1/1;
-    object-fit: contain;
-}
-.tiles .text {
-    position: absolute;
-    top: 104px;
-    left: auto;
-    font-size: 10pt;
-    align-items: left;
-    inline-size: 'start';
-}
+    
 .modal {
   visibility: hidden;
   opacity: 0;
