@@ -322,7 +322,9 @@ button:active {
     display: inline-grid;
     flex-wrap: wrap;
     gap: 8px;
-
+    aspect-ratio: 1/1;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 }
 
 .tile-title {
