@@ -3605,7 +3605,36 @@ nav button:active {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     max-width: 140pt;
 }  
-
+.nav-links {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        height: 0;
+        width: 100%;
+        background: inherit;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
+            background-color 0.3s;
+    }
+    .show .nav-links {
+        height: 100%;
+        background-color: inherit;
+    }
+    .nav-links a {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        margin-right: 50px;
+        margin-left: 50px;
+        transition: opacity 1.5s, height 2s;
+    }
+    .show .nav-links a {
+        opacity: 1;
+        width: auto;
+        height: auto;
+    }
 .nav-icon {
     display: none;
     grid-gap: 5px;
@@ -3631,35 +3660,7 @@ nav button:active {
     .show {
         background-color: #ffffff;
     }
-    .nav-links {
-        top: 54px;
-        right: 0;
-        height: 0;
-        width: 100%;
-        background: #ffffff;
-        flex-direction: column;
-        justify-content: space-evenly;
-        transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
-            background-color 0.3s;
-    }
-    .show .nav-links {
-        height: 100%;
-        background-color: inherit;
-    }
-    .nav-links a {
-        height: 0;
-        width: 0;
-        opacity: 0;
-        overflow: hidden;
-        margin-right: 50px;
-        margin-left: 50px;
-        transition: opacity 1.5s, height 2s;
-    }
-    .show .nav-links a {
-        opacity: 1;
-        width: auto;
-        height: auto;
-    }
+
     .nav-icon {
         order: 2;
         display: grid;
@@ -4014,14 +4015,15 @@ nav button:active {
     .show {
         background-color: #ffffff;
     }
-    .nav-links {
-        top: 54px;
+.nav-links {
+        position: fixed;
+        top: 60px;
         right: 0;
         height: 0;
         width: 100%;
-        background: #ffffff;
+        background: inherit;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: flex-start;
         transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
             background-color 0.3s;
     }
