@@ -456,12 +456,12 @@ button:active {
 }
 
 .modal__close {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #1e1e1e;
-  text-decoration: none;
-}
+        position: absolute;
+        margin: auto;
+        padding: auto;
+        color: #1e1e1e;
+        text-decoration: none;
+    }
 
 .gallery {
     display: flex;
@@ -606,13 +606,117 @@ main {
     padding: 8px;
 }
 
+nav button {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
+    cursor: pointer;
+    gap: 16px;
+}
+
+nav button:hover {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    max-width: 140pt;
+}
+
+nav button:active {
+    background-color: #ffffff;
+    display: inline-flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    cursor: pointer;
+    font-size: 10pt;
+    font-weight: bolder ;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    max-width: 140pt;
+}  
+
+.nav-icon {
+    display: none;
+    grid-gap: 5px;
+    grid-template-columns: auto;
+    padding: 16px 0;
+    height: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.bar {
+    height: 4px;
+    width: 16px;
+    background: #1e1e1e;
+    transition: 0.5s;
+}
+.show .one {
+    transform: rotate(45deg) translateY(6px);
+}
+.show .two {
+    transform: rotate(-45deg) translateY(-6px);
+}
+
+    .show {
+        background-color: #ffffff;
+    }
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        right: 0;
+        height: 0;
+        width: 100%;
+        background: inherit;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: height 2s cubic-bezier(0.19, 1, 0.22, 1),
+            background-color 0.3s;
+    }
+    .show .nav-links {
+        height: 100%;
+        background-color: inherit;
+    }
+    .nav-links a {
+        height: 0;
+        width: 0;
+        opacity: 0;
+        overflow: hidden;
+        margin-right: 50px;
+        margin-left: 50px;
+        transition: opacity 1.5s, height 2s;
+    }
+    .show .nav-links a {
+        opacity: 1;
+        width: auto;
+        height: auto;
+    }
+    .nav-icon {
+        order: 2;
+        display: grid;
+    }
+    .logo {
+        order: 1;
+    }
+}     
 .masthead {
     background-color: #ffffff;
     margin: 0px;
     padding: 64px 0px;
     text-align: center ;
     flex-wrap: wrap ;
-    line-break: ;
 }
 
 .tagline {
@@ -671,110 +775,8 @@ a:any-link {
     cursor: auto;
 }
 
-nav button {
-    background-color: #ffffff;
-    display: inline;
-    flex: 1 1 auto;
-    font-size: 10pt;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
-    cursor: pointer;
-    border-color: #1e1e1e;
-    border: 2px;
-    border-radius: 16px;
-    border-color: #1e1e1e;
-    margin: 0;
-}
-
-nav button:hover {
-    background-color: #ffffff;
-    display: inline;
-    flex: 1 1 auto;
-    font-size: 10pt;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-    font-weight: bolder ;
-    margin: 0;
-
-}
-
-nav button:active {
-    background-color: #ffffff;
-    display: inline-flex;
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 10pt;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     text-align: center;
-    cursor: pointer;
-    gap: 16px;
-    border-color: #1e1e1e;
-    border: 2;
-    border-radius: 16px;
-    font-weight: bolder ;
-        margin: 0;
-
-}
-
-.nav-content {
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 12pt;
-    line-height: 44px;
-    text-decoration: none;
-    transition: all 0.3s;
-    color: #1e1e1e;
-}
-.nav-content a {
-    max-width: 1024px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    font-size: 12pt;
-    line-height: 44px;
-    text-decoration: none;
-    transition: all 0.3s;
-    color: #1e1e1e;
-}
-.nav-content a:hover,
-.nav-icon:hover,
-.search-icon:hover {
-    opacity: 0.7;
-}
-.nav-links {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.nav-icon {
-    display: none;
-    grid-gap: 5px;
-    grid-template-columns: auto;
-    padding: 16px 0;
-    height: 10px;
-    cursor: pointer;
-    transition: all 0.3s;
-}
-.bar {
-    height: 4px;
-    width: 16px;
-    background: #1e1e1e;
-    transition: 0.5s;
-}
-.show .one {
-    transform: rotate(45deg) translateY(6px);
-}
-.show .two {
-    transform: rotate(-45deg) translateY(-6px);
+.logo {
+    background-color: inherit;
 }
 
 .filterPosts {
@@ -787,6 +789,7 @@ nav button:active {
     cursor: pointer;
     font-size: 10pt;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
+    margin: 0;
 }
 
 .filterPosts:hover {
@@ -816,17 +819,18 @@ nav button:active {
 }
 
 button {
-    background-color: #ffffff;
-    display: inline-flex;
-    flex: 1 1 auto;
-    align-items: center;
-    justify-content: center;
-    padding: 16px;
-    cursor: pointer;
-    font-size: 10pt;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
-    max-width: 140pt;
-}
+            background-color: #ffffff;
+            display: inline-flex;
+            flex: 1 1 auto;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+            cursor: pointer;
+            font-size: 10pt;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;             height: 22pt;
+            max-width: 140pt;
+        
+        }
 
 button:hover {
     background-color: #ffffff;
@@ -855,11 +859,19 @@ button:active {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;     height: 22pt;
     max-width: 140pt;
 }
-
+    
 .tile-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+.tile-title {
+    margin-top: 16px !important;
+    top: 50px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .tile {
@@ -874,26 +886,58 @@ button:active {
     flex: 1;
     border-top: 2pt solid;
 }
-.tile-title {
-    margin-top: 16px !important;
-    top: 50px !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-    
+
 .tile img {
     max-width: 100%;
     height: auto;
     aspect-ratio: 1/1;
     object-fit: contain;
 }
-
 .tile .text {
     position: absolute ;
     top: 16px;
     left: 0px;
     font-size: 12pt;
+}
+
+.tiles-1 {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+}
+
+.tiles-1 .text {
+    position: absolute;
+    top: 104px;
+    left: auto;
+    font-size: 12pt;
+    align-items: left;
+    inline-size: 'start';
+}
+.tiles {
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    flex: 1;
+    gap: 16px;
+
+
+}
+
+.tiles img {
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+}
+.tiles .text {
+    position: absolute;
+    top: 104px;
+    left: auto;
+    font-size: 12pt;
+    align-items: left;
+    inline-size: 'start';
 }
 .modal {
   visibility: hidden;
@@ -913,7 +957,6 @@ button:active {
 }
 .footer {
             position: static ;
-            display: block ;
             text-align: center;
             padding: 8px;
             background-color: #ffffff;
@@ -922,12 +965,13 @@ button:active {
 
 .footer a {
             color: #1e1e1e;
-            position: static ;
+            position: sticky ;
             display: block;
             text-align: center;
             padding: 8px;
             font-size: 12px;
         }
+    
 
 @media (max-width: 768px) {
 main {
@@ -1301,10 +1345,7 @@ button:active {
             padding: 8px;
             font-size: 12px;
         }
-
-.footer a:hover {
-            text-decoration: underline;
-        }
+    
 @media (max-width: 480px) {
 main {
     display: inline;
@@ -2554,12 +2595,11 @@ button:active {
   }
 }
 .modal__close {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  color: #1e1e1e;
-  text-decoration: none;
-}
+        top: 16px;
+        right: 16px;
+        color: #1e1e1e;
+        text-decoration: none;
+    }
 
 .modal .modal__content .modal__content-scroll::-webkit-scrollbar {
     width: 10px;
