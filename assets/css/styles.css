@@ -347,10 +347,6 @@ button:active {
     border-top: 2pt solid;
 }
 
-.tile:hover {
-  transform: scale(1.016);
-}
-
 .tile img {
     max-width: 100%;
     height: auto;
@@ -1207,10 +1203,6 @@ button:active {
     border-top: 2pt solid;
 }
 
-.tile:hover {
-  transform: scale(1.05);
-}
-
 .tile img {
     max-width: 100%;
     height: auto;
@@ -1587,10 +1579,6 @@ button:active {
     grid-template-rows: repeat(3, 1fr);
     flex: 1;
     border-top: 2pt solid;
-}
-
-.tile:hover {
-  transform: scale(1.05);
 }
 
 .tile img {
@@ -2018,10 +2006,6 @@ button:active {
     border-top: 2pt solid;
 }
 
-.tile:hover {
-  transform: scale(1.05);
-}
-
 .tile img {
     max-width: 100%;
     height: auto;
@@ -2445,10 +2429,6 @@ button:active {
     grid-template-rows: repeat(3, 1fr);
     flex: 1;
     border-top: 2pt solid;
-}
-
-.tile:hover {
-  transform: scale(1.05);
 }
 
 .tile img {
@@ -3001,10 +2981,6 @@ button:active {
     border-top: 2pt solid;
 }
 
-.tile:hover {
-  transform: scale(1.05);
-}
-
 .tile img {
     max-width: 100%;
     height: auto;
@@ -3382,10 +3358,6 @@ button:active {
     grid-template-rows: repeat(3, 1fr);
     flex: 1;
     border-top: 2pt solid;
-}
-
-.tile:hover {
-  transform: scale(1.05);
 }
 
 .tile img {
@@ -3766,10 +3738,6 @@ button:active {
     grid-template-rows: repeat(3, 1fr);
     flex: 1;
     border-top: 2pt solid;
-}
-
-.tile:hover {
-  transform: scale(1.05);
 }
 
 .tile img {
@@ -4205,11 +4173,8 @@ background-color: inherit;
     grid-template-rows: repeat(3, 1fr);
     flex: 1;
     border-top: 2pt solid;
-  overflow: hidden;
-  transition: transform 0.3s ease;}
-
-.tile:hover {
-  transform: scale(1.05);
+    overflow: hidden;
+    transition: transform 0.3s ease;
 }
 
 .tile img {
