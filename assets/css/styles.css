@@ -882,11 +882,6 @@ button:active {
     flex: 1;
     border-top: 2pt solid;
 }
-
-.tile:hover {
-  transform: scale(1.05);
-}
-
 .tile img {
     max-width: 100%;
     height: auto;
