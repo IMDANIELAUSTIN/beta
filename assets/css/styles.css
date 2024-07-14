@@ -319,6 +319,7 @@ button:active {
 }
 
 .tile-container {
+    background-color: #ffffff;
     display: inline-grid;
     flex-wrap: wrap;
     gap: 8px;
@@ -336,9 +337,9 @@ button:active {
 }
 
 .tile {
-    background-color: inherit;
-    display: inline-block;
-    position: static;
+    background-color: #ffffff;
+    display: inline-grid;
+    position: sticky;
     align-items: center;
     justify-content: center;
     aspect-ratio: 1/1;
@@ -354,7 +355,7 @@ button:active {
     max-width: 100%;
     height: auto;
     aspect-ratio: 1/1;
-    object-fit: contain;
+    object-fit: cover;
 }
 .tile .text {
     position: absolute;
