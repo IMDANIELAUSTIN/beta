@@ -2460,9 +2460,9 @@ button:active {
 }
 
 .tile-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+    display: inline-grid;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .tile-title {
