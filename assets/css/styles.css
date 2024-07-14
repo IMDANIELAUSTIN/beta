@@ -443,11 +443,13 @@ button:active {
 
 .modal__footer {
   text-align: center;
-  margin: 16px;
-}
-
-a, i {
-  color: #1e1e1e;
+    margin: 16px;
+  a {
+    color: #1e1e1e;
+  }
+  i {
+    color: #1e1e1e;
+  }
 }
 
 .modal__close {
@@ -524,15 +526,24 @@ object-fit: cover;
     position: absolute;
     top: 15px;
     right: 35px;
-    color: #fff;
+    color: #1e1e1e;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
-    color: #bbb;
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #1e1e1e;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: #1e1e1e;
     text-decoration: none;
     cursor: pointer;
 }
@@ -2632,15 +2643,24 @@ object-fit: cover;
     position: absolute;
     top: 15px;
     right: 35px;
-    color: #fff;
+    color: #1e1e1e;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
-    color: #bbb;
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #1e1e1e;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+    color: #1e1e1e;
     text-decoration: none;
     cursor: pointer;
 }
