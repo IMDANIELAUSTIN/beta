@@ -2572,16 +2572,15 @@ button:active {
 }
 
 .modal__content {
-  border-radius: 16px;
-  position: fixed;
-  max-width: 50%;
-  min-width: 360px;
-  max-height: 80%;
-  background: #ffffff;
-  margin: 8px;
-  padding: 16px;
-  overflow-y: auto;
-
+    border-radius: 16px;
+    position: fixed;
+    max-width: 80%;
+    min-width: auto;
+    max-height: 80%;
+    background: #ffffff;
+    margin: 8px;
+    padding: 16px;
+    overflow-y: auto;
 }
 
 .modal__footer {
